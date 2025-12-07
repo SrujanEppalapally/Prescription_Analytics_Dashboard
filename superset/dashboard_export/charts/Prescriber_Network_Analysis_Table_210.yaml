@@ -1,0 +1,208 @@
+slice_name: Prescriber Network Analysis Table
+description: null
+certified_by: null
+certification_details: null
+viz_type: table
+params:
+  datasource: 30__table
+  viz_type: table
+  slice_id: 210
+  matrixify_show_column_headers: true
+  matrixify_mode_columns: metrics
+  matrixify_dimension_selection_mode_columns: members
+  matrixify_dimension_columns:
+    dimension: ''
+    values: []
+  matrixify_topn_value_columns: 10
+  matrixify_topn_order_columns: desc
+  matrixify_show_row_labels: true
+  matrixify_mode_rows: metrics
+  matrixify_dimension_selection_mode_rows: members
+  matrixify_dimension_rows:
+    dimension: ''
+    values: []
+  matrixify_topn_value_rows: 10
+  matrixify_topn_order_rows: desc
+  matrixify_row_height: 300
+  matrixify_fit_columns_dynamically: true
+  matrixify_charts_per_row: 3
+  query_mode: raw
+  groupby: []
+  temporal_columns_lookup: {}
+  all_columns:
+  - total_prescriptions
+  - total_cost
+  - cost_per_claim
+  - unique_drugs
+  - patients_served
+  - cost_z_score
+  percent_metrics: []
+  adhoc_filters:
+  - expressionType: SIMPLE
+    subject: city
+    operator: IN
+    operatorId: IN
+    comparator:
+    - Atlantic City
+    - Avenel
+    - Berkeley Heights
+    - Bloomfield
+    - Bordentown
+    - Bridgewater
+    - Camden
+    - Cape May Court House
+    - Cherry Hill
+    - Clifton
+    - Denville
+    - East Brunswick
+    - East Orange
+    - Edison
+    - Egg Harbor Township
+    - Elizabeth
+    - Englewood Cliffs
+    - Fair Lawn
+    - Flemington
+    - Freehold
+    - Galloway
+    - Hackensack
+    - Hamilton
+    - Hoboken
+    - Jersey City
+    - Kearny
+    - Lakewood
+    - Leonia
+    - Little Silver
+    - Maplewood
+    - Maywood
+    - Moorestown
+    - Morristown
+    - Mount Arlington
+    - Mount Laurel
+    - Neptune
+    - Newark
+    - New Brunswick
+    - Newton
+    - North Arlington
+    - Old Bridge
+    - Palisades Park
+    - Paramus
+    - Red Bank
+    - Ridgewood
+    - Sewell
+    - Somerset
+    - Somerville
+    - Springfield
+    - Stratford
+    - Summit
+    - Teaneck
+    - Toms River
+    - Union
+    - Union City
+    - Vineland
+    - Voorhees
+    - West Long Branch
+    - Woodland Park
+    clause: WHERE
+    sqlExpression: null
+    isExtra: false
+    isNew: false
+    datasourceWarning: false
+    filterOptionName: filter_w85vfzvx4io_4banewrtfdp
+  - expressionType: SIMPLE
+    subject: specialty
+    operator: IN
+    operatorId: IN
+    comparator:
+    - Advanced Heart Failure and Transplant Cardiology
+    - Cardiology
+    - Diagnostic Radiology
+    - Endocrinology
+    - Family Practice
+    - Gastroenterology
+    - Hematology
+    - Hematology-Oncology
+    - Infectious Disease
+    - Internal Medicine
+    - Medical Oncology
+    - Nephrology
+    - Neurology
+    - Nurse Practitioner
+    - Ophthalmology
+    - Optometry
+    - Physician Assistant
+    - Pulmonary Disease
+    - Rheumatology
+    - Urology
+    clause: WHERE
+    sqlExpression: null
+    isExtra: false
+    isNew: false
+    datasourceWarning: false
+    filterOptionName: filter_ddt0a2uyx66_a2vmw9uz52
+  order_by_cols: []
+  row_limit: '25'
+  table_timestamp_format: smart_date
+  include_search: false
+  allow_render_html: true
+  show_cell_bars: true
+  align_pn: false
+  color_pn: true
+  conditional_formatting:
+  - colorScheme: Red
+    column: cost_per_claim
+    operator: None
+    useGradient: true
+  - column: cost_z_score
+    colorScheme: colorError
+    useGradient: true
+    operator: '>'
+    targetValue: 2
+    toAllRow: false
+    toTextColor: true
+  - column: cost_z_score
+    colorScheme: colorSuccess
+    useGradient: true
+    operator: <
+    targetValue: 1
+    toAllRow: false
+    toTextColor: true
+  - column: cost_z_score
+    colorScheme: colorWarning
+    useGradient: true
+    targetValueLeft: '1'
+    operator: < x <
+    targetValueRight: '2'
+    toAllRow: false
+    toTextColor: true
+  comparison_type: values
+  extra_form_data: {}
+  dashboards:
+  - 12
+query_context: '{"datasource":{"id":30,"type":"table"},"force":false,"queries":[{"filters":[{"col":"city","op":"IN","val":["Atlantic
+  City","Avenel","Berkeley Heights","Bloomfield","Bordentown","Bridgewater","Camden","Cape
+  May Court House","Cherry Hill","Clifton","Denville","East Brunswick","East Orange","Edison","Egg
+  Harbor Township","Elizabeth","Englewood Cliffs","Fair Lawn","Flemington","Freehold","Galloway","Hackensack","Hamilton","Hoboken","Jersey
+  City","Kearny","Lakewood","Leonia","Little Silver","Maplewood","Maywood","Moorestown","Morristown","Mount
+  Arlington","Mount Laurel","Neptune","Newark","New Brunswick","Newton","North Arlington","Old
+  Bridge","Palisades Park","Paramus","Red Bank","Ridgewood","Sewell","Somerset","Somerville","Springfield","Stratford","Summit","Teaneck","Toms
+  River","Union","Union City","Vineland","Voorhees","West Long Branch","Woodland Park"]},{"col":"specialty","op":"IN","val":["Advanced
+  Heart Failure and Transplant Cardiology","Cardiology","Diagnostic Radiology","Endocrinology","Family
+  Practice","Gastroenterology","Hematology","Hematology-Oncology","Infectious Disease","Internal
+  Medicine","Medical Oncology","Nephrology","Neurology","Nurse Practitioner","Ophthalmology","Optometry","Physician
+  Assistant","Pulmonary Disease","Rheumatology","Urology"]}],"extras":{"having":"","where":""},"applied_time_extras":{},"columns":["total_prescriptions","total_cost","cost_per_claim","unique_drugs","patients_served","cost_z_score"],"orderby":[],"annotation_layers":[],"row_limit":25,"series_limit":0,"group_others_when_limit_reached":false,"order_desc":true,"url_params":{},"custom_params":{},"custom_form_data":{},"post_processing":[],"time_offsets":[]}],"form_data":{"datasource":"30__table","viz_type":"table","slice_id":210,"matrixify_show_column_headers":true,"matrixify_mode_columns":"metrics","matrixify_dimension_selection_mode_columns":"members","matrixify_dimension_columns":{"dimension":"","values":[]},"matrixify_topn_value_columns":10,"matrixify_topn_order_columns":"desc","matrixify_show_row_labels":true,"matrixify_mode_rows":"metrics","matrixify_dimension_selection_mode_rows":"members","matrixify_dimension_rows":{"dimension":"","values":[]},"matrixify_topn_value_rows":10,"matrixify_topn_order_rows":"desc","matrixify_row_height":300,"matrixify_fit_columns_dynamically":true,"matrixify_charts_per_row":3,"query_mode":"raw","groupby":[],"temporal_columns_lookup":{},"all_columns":["total_prescriptions","total_cost","cost_per_claim","unique_drugs","patients_served","cost_z_score"],"percent_metrics":[],"adhoc_filters":[{"expressionType":"SIMPLE","subject":"city","operator":"IN","operatorId":"IN","comparator":["Atlantic
+  City","Avenel","Berkeley Heights","Bloomfield","Bordentown","Bridgewater","Camden","Cape
+  May Court House","Cherry Hill","Clifton","Denville","East Brunswick","East Orange","Edison","Egg
+  Harbor Township","Elizabeth","Englewood Cliffs","Fair Lawn","Flemington","Freehold","Galloway","Hackensack","Hamilton","Hoboken","Jersey
+  City","Kearny","Lakewood","Leonia","Little Silver","Maplewood","Maywood","Moorestown","Morristown","Mount
+  Arlington","Mount Laurel","Neptune","Newark","New Brunswick","Newton","North Arlington","Old
+  Bridge","Palisades Park","Paramus","Red Bank","Ridgewood","Sewell","Somerset","Somerville","Springfield","Stratford","Summit","Teaneck","Toms
+  River","Union","Union City","Vineland","Voorhees","West Long Branch","Woodland Park"],"clause":"WHERE","sqlExpression":null,"isExtra":false,"isNew":false,"datasourceWarning":false,"filterOptionName":"filter_w85vfzvx4io_4banewrtfdp"},{"expressionType":"SIMPLE","subject":"specialty","operator":"IN","operatorId":"IN","comparator":["Advanced
+  Heart Failure and Transplant Cardiology","Cardiology","Diagnostic Radiology","Endocrinology","Family
+  Practice","Gastroenterology","Hematology","Hematology-Oncology","Infectious Disease","Internal
+  Medicine","Medical Oncology","Nephrology","Neurology","Nurse Practitioner","Ophthalmology","Optometry","Physician
+  Assistant","Pulmonary Disease","Rheumatology","Urology"],"clause":"WHERE","sqlExpression":null,"isExtra":false,"isNew":false,"datasourceWarning":false,"filterOptionName":"filter_ddt0a2uyx66_a2vmw9uz52"}],"order_by_cols":[],"row_limit":"25","table_timestamp_format":"smart_date","include_search":false,"allow_render_html":true,"show_cell_bars":true,"align_pn":false,"color_pn":true,"conditional_formatting":[{"colorScheme":"Red","column":"cost_per_claim","operator":"None","useGradient":true},{"column":"cost_z_score","colorScheme":"colorError","useGradient":true,"operator":">","targetValue":2,"toAllRow":false,"toTextColor":true},{"column":"cost_z_score","colorScheme":"colorSuccess","useGradient":true,"operator":"<","targetValue":1,"toAllRow":false,"toTextColor":true},{"column":"cost_z_score","colorScheme":"colorWarning","useGradient":true,"targetValueLeft":"1","operator":"<
+  x <","targetValueRight":"2","toAllRow":false,"toTextColor":true}],"comparison_type":"values","extra_form_data":{},"dashboards":[12],"force":false,"result_format":"json","result_type":"full","include_time":false},"result_format":"json","result_type":"full"}'
+cache_timeout: null
+uuid: f4052e00-0afd-4d1a-8981-54e09b19b3d6
+version: 1.0.0
+dataset_uuid: 4f217274-4373-4981-9636-337e1b370432

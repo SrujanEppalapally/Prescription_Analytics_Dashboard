@@ -1,0 +1,1124 @@
+dashboard_title: Prescription Analytics Dashboard- New Jersey
+description: null
+css: ''
+slug: null
+certified_by: ''
+certification_details: ''
+published: false
+uuid: 8950c325-fea7-44c3-aeb3-ff2c5d6bad29
+position:
+  CHART-explore-122-1:
+    children: []
+    id: CHART-explore-122-1
+    meta:
+      chartId: 122
+      height: 27
+      sliceName: Total Prescription Volume
+      uuid: b217fc59-2c19-4096-97ce-d9706eab2c5b
+      width: 2
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - ROW-6w1N9cP0NJXndcKtx4D9G
+    type: CHART
+  CHART-explore-123-1:
+    children: []
+    id: CHART-explore-123-1
+    meta:
+      chartId: 123
+      height: 27
+      sliceName: Total Healthcare Expenditure
+      uuid: 2d9a10f6-3477-4d73-966e-4055c24211e9
+      width: 2
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - ROW-6w1N9cP0NJXndcKtx4D9G
+    type: CHART
+  CHART-explore-124-1:
+    children: []
+    id: CHART-explore-124-1
+    meta:
+      chartId: 124
+      height: 27
+      sliceName: Average Cost per Claim
+      uuid: e7037075-38b2-4797-a0c5-8528dbc11d0d
+      width: 2
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - ROW-6w1N9cP0NJXndcKtx4D9G
+    type: CHART
+  CHART-explore-125-1:
+    children: []
+    id: CHART-explore-125-1
+    meta:
+      chartId: 125
+      height: 27
+      sliceName: Cost Per Claim
+      uuid: 645b9cd5-2874-4664-893b-e9ccb0716acd
+      width: 2
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - ROW-6w1N9cP0NJXndcKtx4D9G
+    type: CHART
+  CHART-explore-204-1:
+    children: []
+    id: CHART-explore-204-1
+    meta:
+      chartId: 204
+      height: 27
+      sliceName: Generic Dispensing Rate
+      uuid: 52f77ff2-818a-404f-bcf4-212f8da83082
+      width: 2
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - ROW-6w1N9cP0NJXndcKtx4D9G
+    type: CHART
+  CHART-explore-205-1:
+    children: []
+    id: CHART-explore-205-1
+    meta:
+      chartId: 205
+      height: 27
+      sliceName: Cost Per Member Per Month
+      uuid: 0e42f32f-28bd-43b7-a193-31768cca0246
+      width: 2
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - ROW-6w1N9cP0NJXndcKtx4D9G
+    type: CHART
+  CHART-explore-206-1:
+    children: []
+    id: CHART-explore-206-1
+    meta:
+      chartId: 206
+      height: 50
+      sliceName: Top 25 High-Impact Drugs - Cost & Volume Analysis
+      uuid: 6b650371-e6a9-447d-b6d3-07627b3becdf
+      width: 6
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - ROW-8D_ymVvGVfbOPJ8WMWsgS
+    type: CHART
+  CHART-explore-207-1:
+    children: []
+    id: CHART-explore-207-1
+    meta:
+      chartId: 207
+      height: 50
+      sliceName: Specialty Drug Risk Matrix
+      sliceNameOverride: Specialty Risk Matrix
+      uuid: 4297a9ee-5de0-4372-a21b-29319ac33d50
+      width: 6
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - ROW-8D_ymVvGVfbOPJ8WMWsgS
+    type: CHART
+  CHART-explore-208-1:
+    children: []
+    id: CHART-explore-208-1
+    meta:
+      chartId: 208
+      height: 50
+      sliceName: Brand vs Generic Cost Exposure
+      uuid: e4a053b4-68a5-4618-9b00-7dff6dd56ff9
+      width: 12
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - ROW-HGmYAkyKRDcR-h01-QQXW
+    type: CHART
+  CHART-explore-209-1:
+    children: []
+    id: CHART-explore-209-1
+    meta:
+      chartId: 209
+      height: 50
+      sliceName: NJ City-Level Cost Heatmap
+      sliceNameOverride: NJ City-Level Cost Treemap
+      uuid: 7b0c7f94-c8f7-463e-9916-45ff660f7e16
+      width: 12
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - ROW-kv_9p91msv8YE0IHGLqv4
+    type: CHART
+  CHART-explore-210-1:
+    children: []
+    id: CHART-explore-210-1
+    meta:
+      chartId: 210
+      height: 50
+      sliceName: Prescriber Network Analysis Table
+      uuid: f4052e00-0afd-4d1a-8981-54e09b19b3d6
+      width: 6
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - ROW-4KjeZmF6OpP35yXtdYO2w
+    type: CHART
+  CHART-explore-211-1:
+    children: []
+    id: CHART-explore-211-1
+    meta:
+      chartId: 211
+      height: 50
+      sliceName: Polypharmacy Risk Distribution
+      uuid: c3dbf65d-32ee-4acc-972c-3781b7246062
+      width: 6
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - ROW-B6jBByfzdQj0TcD_plCVw
+    type: CHART
+  CHART-explore-212-1:
+    children: []
+    id: CHART-explore-212-1
+    meta:
+      chartId: 212
+      height: 50
+      sliceName: Medication Adherence Patterns
+      uuid: 274b2a02-f159-4e8d-aa57-5d3fc2e9bc9b
+      width: 6
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - ROW-VYX47_iHxQ0Pg1XsGdE-K
+    type: CHART
+  CHART-explore-213-1:
+    children: []
+    id: CHART-explore-213-1
+    meta:
+      chartId: 213
+      height: 50
+      sliceName: Senior Population Cost Impact
+      uuid: 6ff91892-5344-489e-a0e6-4f57849bf4da
+      width: 6
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - ROW-B6jBByfzdQj0TcD_plCVw
+    type: CHART
+  CHART-explore-214-1:
+    children: []
+    id: CHART-explore-214-1
+    meta:
+      chartId: 214
+      height: 50
+      sliceName: Prescriber Efficiency Scatter
+      uuid: 6728a451-5202-40bd-84f4-db7b93321014
+      width: 6
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - ROW-VYX47_iHxQ0Pg1XsGdE-K
+    type: CHART
+  CHART-explore-215-1:
+    children: []
+    id: CHART-explore-215-1
+    meta:
+      chartId: 215
+      height: 50
+      sliceName: Prescriber Specialty Cost Ranking
+      uuid: 36fe7513-879e-4957-b8cc-40613dfff260
+      width: 6
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - ROW-4KjeZmF6OpP35yXtdYO2w
+    type: CHART
+  DASHBOARD_VERSION_KEY: v2
+  GRID_ID:
+    children:
+    - ROW-95Eo3n-rkOzJ65mkUY8jR
+    - ROW-6w1N9cP0NJXndcKtx4D9G
+    - ROW-8D_ymVvGVfbOPJ8WMWsgS
+    - ROW-HGmYAkyKRDcR-h01-QQXW
+    - ROW-kv_9p91msv8YE0IHGLqv4
+    - ROW-VYX47_iHxQ0Pg1XsGdE-K
+    - ROW-B6jBByfzdQj0TcD_plCVw
+    - ROW-4KjeZmF6OpP35yXtdYO2w
+    id: GRID_ID
+    parents:
+    - ROOT_ID
+    type: GRID
+  HEADER_ID:
+    id: HEADER_ID
+    meta:
+      text: Prescription Analytics Dashboard- New Jersey
+    type: HEADER
+  MARKDOWN-ej9Mplrj7PJDJLoO7pKY2:
+    children: []
+    id: MARKDOWN-ej9Mplrj7PJDJLoO7pKY2
+    meta:
+      code: "# \U0001F48A Prescription Analytics Dashboard - New Jersey\r\n\r\n---\r\
+        \n**A business intelligence dashboard analyzing pharmaceutical claims data\
+        \ to identify cost savings opportunities, clinical quality gaps, and provider\
+        \ network optimization strategies.**\r\n"
+      height: 18
+      width: 12
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    - ROW-95Eo3n-rkOzJ65mkUY8jR
+    type: MARKDOWN
+  ROOT_ID:
+    children:
+    - GRID_ID
+    id: ROOT_ID
+    type: ROOT
+  ROW-4KjeZmF6OpP35yXtdYO2w:
+    children:
+    - CHART-explore-210-1
+    - CHART-explore-215-1
+    id: ROW-4KjeZmF6OpP35yXtdYO2w
+    meta:
+      background: BACKGROUND_TRANSPARENT
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    type: ROW
+  ROW-6w1N9cP0NJXndcKtx4D9G:
+    children:
+    - CHART-explore-123-1
+    - CHART-explore-122-1
+    - CHART-explore-124-1
+    - CHART-explore-205-1
+    - CHART-explore-204-1
+    - CHART-explore-125-1
+    id: ROW-6w1N9cP0NJXndcKtx4D9G
+    meta:
+      '0': ROOT_ID
+      background: BACKGROUND_TRANSPARENT
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    type: ROW
+  ROW-8D_ymVvGVfbOPJ8WMWsgS:
+    children:
+    - CHART-explore-206-1
+    - CHART-explore-207-1
+    id: ROW-8D_ymVvGVfbOPJ8WMWsgS
+    meta:
+      '0': ROOT_ID
+      background: BACKGROUND_TRANSPARENT
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    type: ROW
+  ROW-95Eo3n-rkOzJ65mkUY8jR:
+    children:
+    - MARKDOWN-ej9Mplrj7PJDJLoO7pKY2
+    id: ROW-95Eo3n-rkOzJ65mkUY8jR
+    meta:
+      background: BACKGROUND_TRANSPARENT
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    type: ROW
+  ROW-B6jBByfzdQj0TcD_plCVw:
+    children:
+    - CHART-explore-211-1
+    - CHART-explore-213-1
+    id: ROW-B6jBByfzdQj0TcD_plCVw
+    meta:
+      background: BACKGROUND_TRANSPARENT
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    type: ROW
+  ROW-HGmYAkyKRDcR-h01-QQXW:
+    children:
+    - CHART-explore-208-1
+    id: ROW-HGmYAkyKRDcR-h01-QQXW
+    meta:
+      '0': ROOT_ID
+      background: BACKGROUND_TRANSPARENT
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    type: ROW
+  ROW-VYX47_iHxQ0Pg1XsGdE-K:
+    children:
+    - CHART-explore-212-1
+    - CHART-explore-214-1
+    id: ROW-VYX47_iHxQ0Pg1XsGdE-K
+    meta:
+      '0': ROOT_ID
+      background: BACKGROUND_TRANSPARENT
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    type: ROW
+  ROW-kv_9p91msv8YE0IHGLqv4:
+    children:
+    - CHART-explore-209-1
+    id: ROW-kv_9p91msv8YE0IHGLqv4
+    meta:
+      '0': ROOT_ID
+      background: BACKGROUND_TRANSPARENT
+    parents:
+    - ROOT_ID
+    - GRID_ID
+    type: ROW
+metadata:
+  label_colors: {}
+  chart_configuration:
+    '206':
+      id: 206
+      crossFilters:
+        scope: global
+        chartsInScope:
+        - 122
+        - 123
+        - 124
+        - 125
+        - 204
+        - 205
+        - 207
+        - 208
+        - 209
+        - 210
+        - 211
+        - 212
+        - 213
+        - 214
+        - 215
+    '209':
+      id: 209
+      crossFilters:
+        scope: global
+        chartsInScope:
+        - 122
+        - 123
+        - 124
+        - 125
+        - 204
+        - 205
+        - 206
+        - 207
+        - 208
+        - 210
+        - 211
+        - 212
+        - 213
+        - 214
+        - 215
+    '210':
+      id: 210
+      crossFilters:
+        scope: global
+        chartsInScope:
+        - 122
+        - 123
+        - 124
+        - 125
+        - 204
+        - 205
+        - 206
+        - 207
+        - 208
+        - 209
+        - 211
+        - 212
+        - 213
+        - 214
+        - 215
+    '212':
+      id: 212
+      crossFilters:
+        scope: global
+        chartsInScope:
+        - 122
+        - 123
+        - 124
+        - 125
+        - 204
+        - 205
+        - 206
+        - 207
+        - 208
+        - 209
+        - 210
+        - 211
+        - 213
+        - 214
+        - 215
+    '213':
+      id: 213
+      crossFilters:
+        scope: global
+        chartsInScope:
+        - 122
+        - 123
+        - 124
+        - 125
+        - 204
+        - 205
+        - 206
+        - 207
+        - 208
+        - 209
+        - 210
+        - 211
+        - 212
+        - 214
+        - 215
+    '214':
+      id: 214
+      crossFilters:
+        scope: global
+        chartsInScope:
+        - 122
+        - 123
+        - 124
+        - 125
+        - 204
+        - 205
+        - 206
+        - 207
+        - 208
+        - 209
+        - 210
+        - 211
+        - 212
+        - 213
+        - 215
+    '215':
+      id: 215
+      crossFilters:
+        scope: global
+        chartsInScope:
+        - 122
+        - 123
+        - 124
+        - 125
+        - 204
+        - 205
+        - 206
+        - 207
+        - 208
+        - 209
+        - 210
+        - 211
+        - 212
+        - 213
+        - 214
+  global_chart_configuration:
+    scope:
+      rootPath:
+      - ROOT_ID
+      excluded: []
+    chartsInScope:
+    - 122
+    - 123
+    - 124
+    - 125
+    - 204
+    - 205
+    - 206
+    - 207
+    - 208
+    - 209
+    - 210
+    - 211
+    - 212
+    - 213
+    - 214
+    - 215
+  color_scheme: supersetColors
+  refresh_frequency: 0
+  expanded_slices: {}
+  timed_refresh_immune_slices: []
+  cross_filters_enabled: true
+  default_filters: '{}'
+  color_scheme_domain:
+  - '#1FA8C9'
+  - '#454E7C'
+  - '#5AC189'
+  - '#FF7F44'
+  - '#666666'
+  - '#E04355'
+  - '#FCC700'
+  - '#A868B7'
+  - '#3CCCCB'
+  - '#A38F79'
+  - '#8FD3E4'
+  - '#A1A6BD'
+  - '#ACE1C4'
+  - '#FEC0A1'
+  - '#B2B2B2'
+  - '#EFA1AA'
+  - '#FDE380'
+  - '#D3B3DA'
+  - '#9EE5E5'
+  - '#D1C6BC'
+  shared_label_colors:
+  - Advanced Heart Failure and Transplant Cardiology
+  - Allergy/ Immunology
+  - Cardiology
+  - Certified Clinical Nurse Specialist
+  - Clinical Cardiac Electrophysiology
+  - Critical Care (Intensivists)
+  - Dermatology
+  - Emergency Medicine
+  - Endocrinology
+  - Family Practice
+  - Gastroenterology
+  - General Practice
+  - General Surgery
+  - Gynecological Oncology
+  - Hematology
+  - Hematology-Oncology
+  - Hospitalist
+  - Infectious Disease
+  - Internal Medicine
+  - Medical Oncology
+  - Nephrology
+  - Neurology
+  - Neuropsychiatry
+  - Nurse Practitioner
+  - Ophthalmology
+  - Optometry
+  - Pain Management
+  - Pediatric Medicine
+  - Physical Medicine and Rehabilitation
+  - Physician Assistant
+  - Psychiatry
+  - Psychiatry & Neurology
+  - Pulmonary Disease
+  - Rheumatology
+  - Sleep Medicine
+  - Specialist
+  - Sports Medicine
+  - Student in an Organized Health Care Education/Training Program
+  - Urology
+  - Vascular Surgery
+  map_label_colors:
+    City Total Cost: '#1FA8C9'
+    Aberdeen: '#454E7C'
+    Absecon: '#5AC189'
+    Allendale: '#FF7F44'
+    Allentown: '#666666'
+    Alpha: '#E04355'
+    Alpine: '#FCC700'
+    Ancora: '#A868B7'
+    Andover: '#3CCCCB'
+    Annandale: '#A38F79'
+    Asbury Park: '#8FD3E4'
+    Atco: '#A1A6BD'
+    Atlantic City: '#ACE1C4'
+    Atlantic Highlands: '#FEC0A1'
+    Audubon: '#B2B2B2'
+    Avenel: '#EFA1AA'
+    Avon: '#FDE380'
+    Barnegat: '#D3B3DA'
+    Barnegat Light: '#9EE5E5'
+    Barrington: '#D1C6BC'
+    Basking Ridge: '#454E7C'
+    Bay Head: '#5AC189'
+    Bayonne: '#FF7F44'
+    Bayville: '#666666'
+    Bedminster: '#E04355'
+    Beesleys Point: '#FCC700'
+    Belle Mead: '#A868B7'
+    Belleville: '#3CCCCB'
+    Belmar: '#A38F79'
+    Belvidere: '#8FD3E4'
+    Bergenfield: '#A1A6BD'
+    Berkeley Heights: '#ACE1C4'
+    Berlin: '#FEC0A1'
+    Bernardsville: '#B2B2B2'
+    Beverly: '#EFA1AA'
+    Blackwood: '#FDE380'
+    Blairstown: '#D3B3DA'
+    Bloomfield: '#9EE5E5'
+    Bloomingdale: '#D1C6BC'
+    Bloomsbury: '#D1C6BC'
+    Boonton: '#454E7C'
+    Bordentown: '#5AC189'
+    Bound Brook: '#FF7F44'
+    Branchburg: '#666666'
+    Branchville: '#E04355'
+    Brick: '#FCC700'
+    Bridgeton: '#A868B7'
+    Bridgewater: '#3CCCCB'
+    Brielle: '#A38F79'
+    Brigantine: '#8FD3E4'
+    Browns Mills: '#A1A6BD'
+    Budd Lake: '#ACE1C4'
+    Buena: '#FEC0A1'
+    Burlington: '#B2B2B2'
+    Burlington City: '#EFA1AA'
+    Burlington Township: '#FDE380'
+    Butler: '#D3B3DA'
+    Byram Township: '#9EE5E5'
+    Caldwell: '#9EE5E5'
+    Califon: '#D1C6BC'
+    Camden: '#454E7C'
+    Cape May: '#5AC189'
+    Cape May Ch: '#FF7F44'
+    Cape May Court: '#666666'
+    Cape May Court House: '#E04355'
+    Carlstadt: '#FCC700'
+    Carneys Point: '#A868B7'
+    Carteret: '#3CCCCB'
+    Cedar Grove: '#A38F79'
+    Cedar Knolls: '#8FD3E4'
+    Chatham: '#A1A6BD'
+    Cherry Hill: '#ACE1C4'
+    Chester: '#FEC0A1'
+    Cinnaminson: '#B2B2B2'
+    Clark: '#EFA1AA'
+    Clarksboro: '#FDE380'
+    Clarksburg: '#D3B3DA'
+    Clayton: '#D3B3DA'
+    Clementon: '#9EE5E5'
+    Cliffside Park: '#D1C6BC'
+    Cliffside Pk: '#454E7C'
+    Cliffwood: '#5AC189'
+    Clifton: '#FF7F44'
+    Clinton: '#666666'
+    Closter: '#E04355'
+    Collingswood: '#FCC700'
+    Colonia: '#A868B7'
+    Colts Neck: '#3CCCCB'
+    Columbia: '#A38F79'
+    Columbus: '#8FD3E4'
+    Cranbury: '#A1A6BD'
+    Cranford: '#ACE1C4'
+    Cream Ridge: '#FEC0A1'
+    Cresskill: '#B2B2B2'
+    Dayton: '#EFA1AA'
+    Delran: '#FDE380'
+    Denville: '#FDE380'
+    Deptford: '#D3B3DA'
+    Dover: '#9EE5E5'
+    Dumont: '#D1C6BC'
+    Dunellen: '#454E7C'
+    East Brunswick: '#5AC189'
+    East Hanover: '#FF7F44'
+    East Orange: '#666666'
+    East Rutherford: '#E04355'
+    East Windsor: '#FCC700'
+    Eatontown: '#A868B7'
+    E Brunswick: '#3CCCCB'
+    Edgewater: '#A38F79'
+    Edison: '#8FD3E4'
+    Egg Harbor City: '#A1A6BD'
+    Egg Harbor Township: '#ACE1C4'
+    Egg Harbor Twp: '#FEC0A1'
+    Elizabeth: '#B2B2B2'
+    Elmer: '#EFA1AA'
+    Elmwood Park: '#EFA1AA'
+    Emerson: '#FDE380'
+    Endlewood: '#D3B3DA'
+    Englewood: '#9EE5E5'
+    Englewood Cliffs: '#D1C6BC'
+    Englishtown: '#454E7C'
+    Evesham: '#5AC189'
+    Ewing: '#FF7F44'
+    Fairfield: '#666666'
+    Fair Haven: '#E04355'
+    Fairlawn: '#FCC700'
+    Fair Lawn: '#A868B7'
+    Fairview: '#3CCCCB'
+    Fanwood: '#A38F79'
+    Far Hills: '#8FD3E4'
+    Farmingdale: '#A1A6BD'
+    Flanders: '#ACE1C4'
+    Flemington: '#FEC0A1'
+    Florham Park: '#B2B2B2'
+    Fords: '#B2B2B2'
+    Forked River: '#EFA1AA'
+    Fort Lee: '#FDE380'
+    Franklin: '#D3B3DA'
+    Franklin Lakes: '#9EE5E5'
+    Franklin Park: '#D1C6BC'
+    Franklinville: '#454E7C'
+    Freehold: '#5AC189'
+    Ft Monmouth: '#FF7F44'
+    Galloway: '#666666'
+    Garfield: '#E04355'
+    Garwood: '#FCC700'
+    Gibbsboro: '#A868B7'
+    Gibbstown: '#3CCCCB'
+    Glassboro: '#A38F79'
+    Glendora: '#8FD3E4'
+    Glen Gardner: '#A1A6BD'
+    Glen Ridge: '#ACE1C4'
+    Glen Rock: '#FEC0A1'
+    Gloucester: '#FEC0A1'
+    Gloucester City: '#B2B2B2'
+    Green Brook: '#EFA1AA'
+    Guttenberg: '#FDE380'
+    Hackensack: '#D3B3DA'
+    Hackettstown: '#9EE5E5'
+    Haddonfield: '#D1C6BC'
+    Haddon Heights: '#454E7C'
+    Haddon Township: '#5AC189'
+    Hainesport: '#FF7F44'
+    Haledon: '#666666'
+    Hamburg: '#E04355'
+    Hamilton: '#FCC700'
+    Hamilton Sq: '#A868B7'
+    Hamilton Square: '#3CCCCB'
+    Hamilton Township: '#A38F79'
+    Hammonton: '#8FD3E4'
+    Hampton: '#A1A6BD'
+    Harrington Park: '#ACE1C4'
+    Harrison: '#ACE1C4'
+    Hasbrouck Heights: '#FEC0A1'
+    Haskell: '#B2B2B2'
+    Haworth: '#EFA1AA'
+    Hawthorne: '#FDE380'
+    Hawthrone: '#D3B3DA'
+    Hazlet: '#9EE5E5'
+    Hewitt: '#D1C6BC'
+    Highland Park: '#454E7C'
+    Hightstown: '#5AC189'
+    Hillsborough: '#FF7F44'
+    Hillsdale: '#666666'
+    Hillside: '#E04355'
+    Hoboken: '#FCC700'
+    Hohokus: '#A868B7'
+    Ho Ho Kus: '#3CCCCB'
+    Holmdel: '#A38F79'
+    Hopelawn: '#8FD3E4'
+    Hopewell: '#A1A6BD'
+    Howell: '#A1A6BD'
+    Irvington: '#ACE1C4'
+    Iselin: '#FEC0A1'
+    Island Heights: '#B2B2B2'
+    Jackson: '#EFA1AA'
+    Jamesburg: '#FDE380'
+    Jb Mdl: '#D3B3DA'
+    Jersey: '#9EE5E5'
+    Jersey City: '#D1C6BC'
+    Keansburg: '#454E7C'
+    Kearney: '#5AC189'
+    Kearny: '#FF7F44'
+    Kendall Park: '#666666'
+    Kenilworth: '#E04355'
+    Keyport: '#FCC700'
+    Kingston: '#A868B7'
+    Kinnelon: '#3CCCCB'
+    Lafayette: '#A38F79'
+    Lake Hiawatha: '#8FD3E4'
+    Lake Hopatcong: '#8FD3E4'
+    Lakehurst: '#A1A6BD'
+    Lakewood: '#ACE1C4'
+    Lambertville: '#FEC0A1'
+    Landing: '#B2B2B2'
+    Lanoka Harbor: '#EFA1AA'
+    Laurel Springs: '#FDE380'
+    Laurence Harbor: '#D3B3DA'
+    Lawrence: '#9EE5E5'
+    Lawrence Township: '#D1C6BC'
+    Lawrenceville: '#454E7C'
+    Lebanon: '#5AC189'
+    Ledgewood: '#FF7F44'
+    Leonia: '#666666'
+    Lincoln Park: '#E04355'
+    Lincroft: '#FCC700'
+    Linden: '#A868B7'
+    Lindenwold: '#3CCCCB'
+    Linwood: '#A38F79'
+    Little Egg Harbor: '#A38F79'
+    Little Egg Harbor Twp: '#8FD3E4'
+    Little Falls: '#A1A6BD'
+    Little Ferry: '#ACE1C4'
+    Little Silver: '#FEC0A1'
+    Livingston: '#B2B2B2'
+    Lodi: '#EFA1AA'
+    Logan Township: '#FDE380'
+    Logan Twp: '#D3B3DA'
+    Long Beach Township: '#9EE5E5'
+    Long Branch: '#D1C6BC'
+    Long Valley: '#454E7C'
+    Lumberton: '#5AC189'
+    Lyndhurst: '#FF7F44'
+    Madison: '#666666'
+    Magnolia: '#E04355'
+    Mahwah: '#FCC700'
+    Manahaukin: '#A868B7'
+    Manahawkin: '#3CCCCB'
+    Manalapan: '#3CCCCB'
+    Manasquan: '#A38F79'
+    Manchester: '#8FD3E4'
+    Manville: '#A1A6BD'
+    Maple Shade: '#ACE1C4'
+    Maplewood: '#FEC0A1'
+    Margate: '#B2B2B2'
+    Margate City: '#EFA1AA'
+    Marlboro: '#FDE380'
+    Marlton: '#D3B3DA'
+    Marmora: '#9EE5E5'
+    Martinsville: '#D1C6BC'
+    Matawan: '#454E7C'
+    Mays Landing: '#5AC189'
+    Maywood: '#FF7F44'
+    Medford: '#666666'
+    Mendham: '#E04355'
+    Mercerville: '#FCC700'
+    Merchantville: '#A868B7'
+    Metuchen: '#A868B7'
+    Mickleton: '#3CCCCB'
+    Middlesex: '#A38F79'
+    Middletown: '#8FD3E4'
+    Midland Park: '#A1A6BD'
+    Milford: '#ACE1C4'
+    Millburn: '#FEC0A1'
+    Millstone: '#B2B2B2'
+    Millstone Township: '#EFA1AA'
+    Milltown: '#FDE380'
+    Millville: '#D3B3DA'
+    Mine Hill: '#9EE5E5'
+    Monclair: '#D1C6BC'
+    Monmouth Junction: '#454E7C'
+    Monroe: '#5AC189'
+    Monroe Township: '#FF7F44'
+    Monroe Twp: '#666666'
+    Montclair: '#E04355'
+    Montvale: '#FCC700'
+    Montville: '#FCC700'
+    Moonachie: '#A868B7'
+    Moorestown: '#3CCCCB'
+    Morganville: '#A38F79'
+    Morris Plains: '#8FD3E4'
+    Morristown: '#A1A6BD'
+    Mountain Lakes: '#ACE1C4'
+    Mountainside: '#FEC0A1'
+    Mount Arlington: '#B2B2B2'
+    Mount Holly: '#EFA1AA'
+    Mount Laurel: '#FDE380'
+    Mt. Laurel: '#D3B3DA'
+    Mullica Hill: '#9EE5E5'
+    N Brunswick: '#D1C6BC'
+    Neptune: '#454E7C'
+    Neptune City: '#5AC189'
+    Neshanic Station: '#FF7F44'
+    Netcong: '#666666'
+    Newark: '#E04355'
+    New Brunswick: '#E04355'
+    Newfoundland: '#FCC700'
+    New Lisbon: '#A868B7'
+    New Milford: '#3CCCCB'
+    New Providence: '#A38F79'
+    Newton: '#8FD3E4'
+    North Arlington: '#A1A6BD'
+    North Bergen: '#ACE1C4'
+    North Brunswick: '#FEC0A1'
+    North Caldwell: '#B2B2B2'
+    North Cape May: '#EFA1AA'
+    Northfield: '#FDE380'
+    North Field: '#D3B3DA'
+    North Haledon: '#9EE5E5'
+    North Plainfield: '#D1C6BC'
+    North Rlington: '#454E7C'
+    Northvale: '#5AC189'
+    North Wildwood: '#FF7F44'
+    Norwood: '#666666'
+    Nutley: '#666666'
+    Oakhurst: '#E04355'
+    Oakland: '#FCC700'
+    Oaklyn: '#A868B7'
+    Oak Ridge: '#3CCCCB'
+    Ocean: '#A38F79'
+    Ocean City: '#8FD3E4'
+    Ocean Gate: '#A1A6BD'
+    Ocean Grove: '#ACE1C4'
+    Oceanport: '#FEC0A1'
+    Ocean Township: '#B2B2B2'
+    Ocean View: '#EFA1AA'
+    Oldbridge: '#FDE380'
+    Old Bridge: '#D3B3DA'
+    Old Tappan: '#9EE5E5'
+    Oradell: '#D1C6BC'
+    Orange: '#454E7C'
+    Palisades Park: '#5AC189'
+    Palmyra: '#FF7F44'
+    Paramus: '#FF7F44'
+    Park Ridge: '#666666'
+    Parlin: '#E04355'
+    Parsippany: '#FCC700'
+    Passaic: '#A868B7'
+    Paterson: '#3CCCCB'
+    Paulsboro: '#A38F79'
+    Peapack: '#8FD3E4'
+    Pemberton: '#A1A6BD'
+    Pennington: '#ACE1C4'
+    Pennsauken: '#FEC0A1'
+    Pennsville: '#B2B2B2'
+    Perth Amboy: '#EFA1AA'
+    Phillipsburg: '#FDE380'
+    Piscataway: '#D3B3DA'
+    Pittsgrove: '#9EE5E5'
+    Plainfield: '#D1C6BC'
+    Plainsboro: '#454E7C'
+    Plainsfield: '#5AC189'
+    Pleasantville: '#5AC189'
+    Point Pleasant: '#FF7F44'
+    Point Pleasant Beach: '#666666'
+    Point Pleasant Boro: '#E04355'
+    Pomona: '#FCC700'
+    Pompton Lakes: '#A868B7'
+    Pompton Plains: '#3CCCCB'
+    Port Monmouth: '#A38F79'
+    Port Reading: '#8FD3E4'
+    Princeton: '#A1A6BD'
+    Princeton Junction: '#ACE1C4'
+    Prospect Park: '#FEC0A1'
+    Pt Pleasant: '#B2B2B2'
+    Rahway: '#EFA1AA'
+    Ramsey: '#FDE380'
+    Ramsy: '#D3B3DA'
+    Randolph: '#9EE5E5'
+    Raritan: '#D1C6BC'
+    Red Bank: '#454E7C'
+    Richland: '#454E7C'
+    Ridgefield: '#5AC189'
+    Ridgefield Park: '#FF7F44'
+    Ridgewood: '#666666'
+    Ringwood: '#E04355'
+    Rio Grande: '#FCC700'
+    Riverdale: '#A868B7'
+    River Edge: '#3CCCCB'
+    Riverside: '#A38F79'
+    River Vale: '#8FD3E4'
+    Robbinsville: '#A1A6BD'
+    Rochelle Park: '#ACE1C4'
+    Rockaway: '#FEC0A1'
+    Roebling: '#B2B2B2'
+    Roseland: '#EFA1AA'
+    Roselle: '#FDE380'
+    Roselle Park: '#D3B3DA'
+    Rumson: '#9EE5E5'
+    Runnemede: '#D1C6BC'
+    Rutherford: '#454E7C'
+    Saddle Brook: '#5AC189'
+    Saddle River: '#FF7F44'
+    Salem: '#666666'
+    Sandyston: '#E04355'
+    Sayreville: '#FCC700'
+    Scotch Plains: '#A868B7'
+    Sea Girt: '#3CCCCB'
+    Secaucus: '#A38F79'
+    Sewell: '#8FD3E4'
+    Shiloh: '#A1A6BD'
+    Ship Bottom: '#ACE1C4'
+    Short Hills: '#FEC0A1'
+    Shrewsbury: '#B2B2B2'
+    Sicklerville: '#EFA1AA'
+    Skillman: '#FDE380'
+    Somerdale: '#D3B3DA'
+    Somerset: '#9EE5E5'
+    Somers Point: '#D1C6BC'
+    Somerville: '#D1C6BC'
+    South Amboy: '#454E7C'
+    Southampton: '#5AC189'
+    South Bound Brook: '#FF7F44'
+    South Orange: '#666666'
+    South Plainfield: '#E04355'
+    South River: '#FCC700'
+    Sparta: '#A868B7'
+    Spotswood: '#3CCCCB'
+    Springfield: '#A38F79'
+    Spring Lake: '#8FD3E4'
+    Spring Lake Heights: '#A1A6BD'
+    Stafford Twp: '#ACE1C4'
+    Stirling: '#FEC0A1'
+    Stone Harbor: '#B2B2B2'
+    Stratford: '#EFA1AA'
+    Succasunna: '#FDE380'
+    Summit: '#D3B3DA'
+    Sussex: '#9EE5E5'
+    Swedesboro: '#9EE5E5'
+    Tabernacle: '#D1C6BC'
+    Teaneck: '#454E7C'
+    Tenafly: '#5AC189'
+    Teterboro: '#FF7F44'
+    Thorofare: '#666666'
+    Tinton Falls: '#E04355'
+    Titusville: '#FCC700'
+    Toms River: '#A868B7'
+    Totowa: '#3CCCCB'
+    Township Of Washington: '#A38F79'
+    Trenton: '#8FD3E4'
+    Tuckerton: '#A1A6BD'
+    Turmersville: '#ACE1C4'
+    Turnersville: '#FEC0A1'
+    Union: '#B2B2B2'
+    Union Beach: '#EFA1AA'
+    Union City: '#FDE380'
+    Union. City: '#D3B3DA'
+    U Saddle Riv: '#D3B3DA'
+    Vauxhall: '#9EE5E5'
+    Ventnon: '#D1C6BC'
+    Ventnor: '#454E7C'
+    Ventnor City: '#5AC189'
+    Vernon: '#FF7F44'
+    Verona: '#666666'
+    Villas: '#E04355'
+    Vineland: '#FCC700'
+    Voorhees: '#A868B7'
+    Voorhees Township: '#3CCCCB'
+    Waldwick: '#A38F79'
+    Wall: '#8FD3E4'
+    Wallington: '#A1A6BD'
+    Wall Township: '#ACE1C4'
+    Wantage: '#FEC0A1'
+    Warren: '#B2B2B2'
+    Washington: '#EFA1AA'
+    Washington Township: '#FDE380'
+    Watching: '#FDE380'
+    Watchung: '#D3B3DA'
+    Waterford: '#9EE5E5'
+    Waterford Works: '#D1C6BC'
+    Wayne: '#454E7C'
+    Weehawken: '#5AC189'
+    Wenonah: '#FF7F44'
+    Westampton: '#666666'
+    West Atlantic City: '#E04355'
+    West Berlin: '#FCC700'
+    West Caldwell: '#A868B7'
+    West Deptford: '#3CCCCB'
+    Westfield: '#A38F79'
+    West Long Branch: '#8FD3E4'
+    West Milford: '#A1A6BD'
+    Westnewyork: '#ACE1C4'
+    West New York: '#FEC0A1'
+    West Orange: '#B2B2B2'
+    West Paterson: '#EFA1AA'
+    West Trenton: '#EFA1AA'
+    Westville: '#FDE380'
+    West Windsor: '#D3B3DA'
+    Westwood: '#9EE5E5'
+    Wharton: '#D1C6BC'
+    Whippany: '#454E7C'
+    Whitehouse Station: '#5AC189'
+    Whiting: '#FF7F44'
+    Wildwood: '#666666'
+    Wildwood Crest: '#E04355'
+    Williamstown: '#FCC700'
+    Willingboro: '#A868B7'
+    W Long Branch: '#3CCCCB'
+    Woodbridge: '#A38F79'
+    Woodbury: '#8FD3E4'
+    Woodbury Heights: '#A1A6BD'
+    Woodcliff Lake: '#ACE1C4'
+    Woodland Park: '#FEC0A1'
+    Woodlynne: '#B2B2B2'
+    Wood Ridge: '#B2B2B2'
+    Wood-Ridge: '#EFA1AA'
+    Woodstown: '#FDE380'
+    Wrightstown: '#D3B3DA'
+    Wyckoff: '#9EE5E5'
+theme_uuid: null
+version: 1.0.0

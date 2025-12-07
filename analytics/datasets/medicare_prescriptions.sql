@@ -1,0 +1,1 @@
+SELECT * FROM medicare_prescriptions WHERE Prscrbr_State_Abrvtn='NJ'

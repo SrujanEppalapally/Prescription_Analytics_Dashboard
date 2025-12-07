@@ -1,0 +1,63 @@
+slice_name: Generic Dispensing Rate
+description: null
+certified_by: null
+certification_details: null
+viz_type: big_number_total
+params:
+  datasource: 26__table
+  viz_type: big_number_total
+  slice_id: 204
+  matrixify_show_column_headers: true
+  matrixify_mode_columns: metrics
+  matrixify_dimension_selection_mode_columns: members
+  matrixify_dimension_columns:
+    dimension: ''
+    values: []
+  matrixify_topn_value_columns: 10
+  matrixify_topn_order_columns: desc
+  matrixify_show_row_labels: true
+  matrixify_mode_rows: metrics
+  matrixify_dimension_selection_mode_rows: members
+  matrixify_dimension_rows:
+    dimension: ''
+    values: []
+  matrixify_topn_value_rows: 10
+  matrixify_topn_order_rows: desc
+  matrixify_row_height: 300
+  matrixify_fit_columns_dynamically: true
+  matrixify_charts_per_row: 4
+  metric:
+    expressionType: SQL
+    sqlExpression: "COUNT(CASE WHEN LOWER(Brnd_Name) = LOWER(Gnrc_Name) THEN 1 END)\
+      \ * 100.0 / (NULLIF(COUNT(*), 0) *100)\r\n"
+    column: null
+    aggregate: null
+    datasourceWarning: false
+    hasCustomLabel: false
+    label: "COUNT(CASE WHEN LOWER(Brnd_Name) = LOWER(Gnrc_Name) THEN 1 END) * 100.0\
+      \ / (NULLIF(COUNT(*), 0) *100)\r\n"
+    optionName: metric_cpusxxwldoc_90aadkn767a
+  adhoc_filters: []
+  header_font_size: 0.4
+  subtitle: ''
+  subtitle_font_size: 0.15
+  metric_name_font_size: 0.15
+  y_axis_format: .2%
+  time_format: smart_date
+  conditional_formatting: []
+  extra_form_data: {}
+  dashboards:
+  - 12
+query_context: '{"datasource":{"id":26,"type":"table"},"force":false,"queries":[{"filters":[],"extras":{"having":"","where":""},"applied_time_extras":{},"columns":[],"metrics":[{"expressionType":"SQL","sqlExpression":"COUNT(CASE
+  WHEN LOWER(Brnd_Name) = LOWER(Gnrc_Name) THEN 1 END) * 100.0 / (NULLIF(COUNT(*),
+  0) *100)\r\n","column":null,"aggregate":null,"datasourceWarning":false,"hasCustomLabel":false,"label":"COUNT(CASE
+  WHEN LOWER(Brnd_Name) = LOWER(Gnrc_Name) THEN 1 END) * 100.0 / (NULLIF(COUNT(*),
+  0) *100)\r\n","optionName":"metric_cpusxxwldoc_90aadkn767a"}],"annotation_layers":[],"series_limit":0,"group_others_when_limit_reached":false,"order_desc":true,"url_params":{},"custom_params":{},"custom_form_data":{}}],"form_data":{"datasource":"26__table","viz_type":"big_number_total","slice_id":204,"matrixify_show_column_headers":true,"matrixify_mode_columns":"metrics","matrixify_dimension_selection_mode_columns":"members","matrixify_dimension_columns":{"dimension":"","values":[]},"matrixify_topn_value_columns":10,"matrixify_topn_order_columns":"desc","matrixify_show_row_labels":true,"matrixify_mode_rows":"metrics","matrixify_dimension_selection_mode_rows":"members","matrixify_dimension_rows":{"dimension":"","values":[]},"matrixify_topn_value_rows":10,"matrixify_topn_order_rows":"desc","matrixify_row_height":300,"matrixify_fit_columns_dynamically":true,"matrixify_charts_per_row":4,"metric":{"expressionType":"SQL","sqlExpression":"COUNT(CASE
+  WHEN LOWER(Brnd_Name) = LOWER(Gnrc_Name) THEN 1 END) * 100.0 / (NULLIF(COUNT(*),
+  0) *100)\r\n","column":null,"aggregate":null,"datasourceWarning":false,"hasCustomLabel":false,"label":"COUNT(CASE
+  WHEN LOWER(Brnd_Name) = LOWER(Gnrc_Name) THEN 1 END) * 100.0 / (NULLIF(COUNT(*),
+  0) *100)\r\n","optionName":"metric_cpusxxwldoc_90aadkn767a"},"adhoc_filters":[],"header_font_size":0.4,"subtitle":"","subtitle_font_size":0.15,"metric_name_font_size":0.15,"y_axis_format":".2%","time_format":"smart_date","conditional_formatting":[],"extra_form_data":{},"dashboards":[12],"force":false,"result_format":"json","result_type":"full"},"result_format":"json","result_type":"full"}'
+cache_timeout: null
+uuid: 52f77ff2-818a-404f-bcf4-212f8da83082
+version: 1.0.0
+dataset_uuid: ed59860c-5a89-4602-9583-25b603f7076d

@@ -1,0 +1,127 @@
+table_name: cost_vs_generic_rate
+main_dttm_col: null
+description: null
+default_endpoint: null
+offset: 0
+cache_timeout: null
+catalog: pharma_analytics
+schema: public
+sql: "SELECT \r\n  Prscrbr_NPI,\r\n  Prscrbr_Last_Org_Name,\r\n  Prscrbr_Type,\r\n\
+  \  SUM(Tot_Drug_Cst) / NULLIF(SUM(Tot_Clms), 0) as cost_per_claim,\r\n  COUNT(CASE\
+  \ WHEN LOWER(Brnd_Name) = LOWER(Gnrc_Name) THEN 1 END) * 100.0 / NULLIF(COUNT(*),\
+  \ 0) as gdr,\r\n  SUM(Tot_Clms) as volume,\r\n  SUM(Tot_Drug_Cst) as total_cost\r\
+  \nFROM medicare_prescriptions\r\nWHERE Prscrbr_State_Abrvtn = 'NJ'\r\nGROUP BY Prscrbr_NPI,\
+  \ Prscrbr_Last_Org_Name, Prscrbr_Type\r\nHAVING SUM(Tot_Clms) > 200\r\n"
+params: null
+template_params: null
+filter_select_enabled: true
+fetch_values_predicate: null
+extra: null
+normalize_columns: false
+always_filter_main_dttm: false
+folders: null
+uuid: 8e1e8584-271f-4232-9eb8-72ef13879efa
+metrics:
+- metric_name: count
+  verbose_name: COUNT(*)
+  metric_type: count
+  expression: COUNT(*)
+  description: null
+  d3format: null
+  currency: null
+  extra: null
+  warning_text: null
+columns:
+- column_name: cost_per_claim
+  verbose_name: null
+  is_dttm: false
+  is_active: true
+  type: DECIMAL
+  advanced_data_type: null
+  groupby: true
+  filterable: true
+  expression: null
+  description: null
+  python_date_format: null
+  datetime_format: null
+  extra: null
+- column_name: total_cost
+  verbose_name: null
+  is_dttm: false
+  is_active: true
+  type: DECIMAL
+  advanced_data_type: null
+  groupby: true
+  filterable: true
+  expression: null
+  description: null
+  python_date_format: null
+  datetime_format: null
+  extra: null
+- column_name: gdr
+  verbose_name: null
+  is_dttm: false
+  is_active: true
+  type: DECIMAL
+  advanced_data_type: null
+  groupby: true
+  filterable: true
+  expression: null
+  description: null
+  python_date_format: null
+  datetime_format: null
+  extra: null
+- column_name: volume
+  verbose_name: null
+  is_dttm: false
+  is_active: true
+  type: LONGINTEGER
+  advanced_data_type: null
+  groupby: true
+  filterable: true
+  expression: null
+  description: null
+  python_date_format: null
+  datetime_format: null
+  extra: null
+- column_name: prscrbr_last_org_name
+  verbose_name: null
+  is_dttm: false
+  is_active: true
+  type: STRING
+  advanced_data_type: null
+  groupby: true
+  filterable: true
+  expression: null
+  description: null
+  python_date_format: null
+  datetime_format: null
+  extra: null
+- column_name: prscrbr_type
+  verbose_name: null
+  is_dttm: false
+  is_active: true
+  type: STRING
+  advanced_data_type: null
+  groupby: true
+  filterable: true
+  expression: null
+  description: null
+  python_date_format: null
+  datetime_format: null
+  extra: null
+- column_name: prscrbr_npi
+  verbose_name: null
+  is_dttm: false
+  is_active: true
+  type: STRING
+  advanced_data_type: null
+  groupby: true
+  filterable: true
+  expression: null
+  description: null
+  python_date_format: null
+  datetime_format: null
+  extra: null
+version: 1.0.0
+database_uuid: 36346b3d-1968-44ef-b990-bf515779505d

@@ -1,0 +1,72 @@
+slice_name: Medication Adherence Patterns
+description: null
+certified_by: null
+certification_details: null
+viz_type: box_plot
+params:
+  datasource: 26__table
+  viz_type: box_plot
+  slice_id: 212
+  matrixify_show_column_headers: true
+  matrixify_mode_columns: metrics
+  matrixify_dimension_selection_mode_columns: members
+  matrixify_dimension_columns:
+    dimension: ''
+    values: []
+  matrixify_topn_value_columns: 10
+  matrixify_topn_order_columns: desc
+  matrixify_show_row_labels: true
+  matrixify_mode_rows: metrics
+  matrixify_dimension_selection_mode_rows: members
+  matrixify_dimension_rows:
+    dimension: ''
+    values: []
+  matrixify_topn_value_rows: 10
+  matrixify_topn_order_rows: desc
+  matrixify_row_height: 300
+  matrixify_fit_columns_dynamically: true
+  matrixify_charts_per_row: 4
+  columns:
+  - label: My column
+    sqlExpression: "Tot_Day_Suply * 1.0 / Tot_Clms\r\n"
+    expressionType: SQL
+  temporal_columns_lookup: {}
+  groupby:
+  - prscrbr_type
+  metrics:
+  - expressionType: SQL
+    sqlExpression: Tot_Day_Suply * 1.0 / Tot_Clms
+    column: null
+    aggregate: null
+    datasourceWarning: false
+    hasCustomLabel: false
+    label: Tot_Day_Suply * 1.0 / Tot_Clms
+    optionName: metric_zo8f8p8o7vc_si754r5poki
+  adhoc_filters: []
+  row_limit: 10000
+  whiskerOptions: Tukey
+  x_axis_title: Specialty
+  x_axis_title_margin: 30
+  y_axis_title: Days Supply per Claim
+  y_axis_title_margin: 30
+  y_axis_title_position: Left
+  color_scheme: supersetColors
+  x_ticks_layout: auto
+  number_format: SMART_NUMBER
+  date_format: smart_date
+  extra_form_data: {}
+  dashboards:
+  - 12
+query_context: '{"datasource":{"id":26,"type":"table"},"force":false,"queries":[{"filters":[],"extras":{"having":"","where":""},"applied_time_extras":{},"columns":[{"label":"My
+  column","sqlExpression":"Tot_Day_Suply * 1.0 / Tot_Clms\r\n","expressionType":"SQL"},"prscrbr_type"],"metrics":[{"expressionType":"SQL","sqlExpression":"Tot_Day_Suply
+  * 1.0 / Tot_Clms","column":null,"aggregate":null,"datasourceWarning":false,"hasCustomLabel":false,"label":"Tot_Day_Suply
+  * 1.0 / Tot_Clms","optionName":"metric_zo8f8p8o7vc_si754r5poki"}],"annotation_layers":[],"row_limit":10000,"series_columns":["prscrbr_type"],"series_limit":0,"group_others_when_limit_reached":false,"order_desc":true,"url_params":{},"custom_params":{},"custom_form_data":{},"post_processing":[{"operation":"boxplot","options":{"whisker_type":"tukey","groupby":["prscrbr_type"],"metrics":["Tot_Day_Suply
+  * 1.0 / Tot_Clms"]}}]}],"form_data":{"datasource":"26__table","viz_type":"box_plot","slice_id":212,"matrixify_show_column_headers":true,"matrixify_mode_columns":"metrics","matrixify_dimension_selection_mode_columns":"members","matrixify_dimension_columns":{"dimension":"","values":[]},"matrixify_topn_value_columns":10,"matrixify_topn_order_columns":"desc","matrixify_show_row_labels":true,"matrixify_mode_rows":"metrics","matrixify_dimension_selection_mode_rows":"members","matrixify_dimension_rows":{"dimension":"","values":[]},"matrixify_topn_value_rows":10,"matrixify_topn_order_rows":"desc","matrixify_row_height":300,"matrixify_fit_columns_dynamically":true,"matrixify_charts_per_row":4,"columns":[{"label":"My
+  column","sqlExpression":"Tot_Day_Suply * 1.0 / Tot_Clms\r\n","expressionType":"SQL"}],"temporal_columns_lookup":{},"groupby":["prscrbr_type"],"metrics":[{"expressionType":"SQL","sqlExpression":"Tot_Day_Suply
+  * 1.0 / Tot_Clms","column":null,"aggregate":null,"datasourceWarning":false,"hasCustomLabel":false,"label":"Tot_Day_Suply
+  * 1.0 / Tot_Clms","optionName":"metric_zo8f8p8o7vc_si754r5poki"}],"adhoc_filters":[],"row_limit":10000,"whiskerOptions":"Tukey","x_axis_title":"Specialty","x_axis_title_margin":30,"y_axis_title":"Days
+  Supply per Claim","y_axis_title_margin":30,"y_axis_title_position":"Left","color_scheme":"supersetColors","x_ticks_layout":"auto","number_format":"SMART_NUMBER","date_format":"smart_date","extra_form_data":{},"dashboards":[12],"force":false,"result_format":"json","result_type":"full"},"result_format":"json","result_type":"full"}'
+cache_timeout: null
+uuid: 274b2a02-f159-4e8d-aa57-5d3fc2e9bc9b
+version: 1.0.0
+dataset_uuid: ed59860c-5a89-4602-9583-25b603f7076d

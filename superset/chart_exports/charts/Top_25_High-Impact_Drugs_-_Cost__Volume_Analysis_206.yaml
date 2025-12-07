@@ -1,0 +1,159 @@
+slice_name: Top 25 High-Impact Drugs - Cost & Volume Analysis
+description: null
+certified_by: null
+certification_details: null
+viz_type: mixed_timeseries
+params:
+  datasource: 27__table
+  viz_type: mixed_timeseries
+  slice_id: 206
+  matrixify_show_column_headers: true
+  matrixify_mode_columns: metrics
+  matrixify_dimension_selection_mode_columns: members
+  matrixify_dimension_columns:
+    dimension: ''
+    values: []
+  matrixify_topn_value_columns: 10
+  matrixify_topn_order_columns: desc
+  matrixify_show_row_labels: true
+  matrixify_mode_rows: metrics
+  matrixify_dimension_selection_mode_rows: members
+  matrixify_dimension_rows:
+    dimension: ''
+    values: []
+  matrixify_topn_value_rows: 10
+  matrixify_topn_order_rows: desc
+  matrixify_row_height: 300
+  matrixify_fit_columns_dynamically: true
+  matrixify_charts_per_row: 4
+  x_axis: brnd_name
+  metrics:
+  - expressionType: SIMPLE
+    column:
+      advanced_data_type: null
+      certification_details: null
+      certified_by: null
+      column_name: total_cost
+      description: null
+      expression: null
+      filterable: true
+      groupby: true
+      id: 816
+      is_certified: false
+      is_dttm: false
+      python_date_format: null
+      type: DECIMAL
+      type_generic: 0
+      uuid: ea2ae84f-b96b-481c-9d2d-d0703b8d0fbb
+      verbose_name: null
+      warning_markdown: null
+    aggregate: SUM
+    sqlExpression: null
+    datasourceWarning: false
+    hasCustomLabel: true
+    label: Total Cost
+    optionName: metric_2910zkh7t4e_5xj658k1xgx
+  groupby: []
+  adhoc_filters: []
+  timeseries_limit_metric:
+    aggregate: null
+    column: null
+    datasourceWarning: false
+    expressionType: SQL
+    hasCustomLabel: false
+    label: SUM(total_cost)
+    optionName: metric_rpluyfeumrf_5ep6hggqv17
+    sqlExpression: SUM(total_cost)
+  order_desc: true
+  row_limit: 10000
+  truncate_metric: true
+  comparison_type: values
+  metrics_b:
+  - expressionType: SIMPLE
+    column:
+      advanced_data_type: null
+      certification_details: null
+      certified_by: null
+      column_name: cost_per_claim
+      description: null
+      expression: null
+      filterable: true
+      groupby: true
+      id: 818
+      is_certified: false
+      is_dttm: false
+      python_date_format: null
+      type: DECIMAL
+      type_generic: 0
+      uuid: ff294f1c-b4d6-4dec-8164-92f1905b5d43
+      verbose_name: null
+      warning_markdown: null
+    aggregate: AVG
+    sqlExpression: null
+    datasourceWarning: false
+    hasCustomLabel: true
+    label: Cost Per Claim
+    optionName: metric_na30igabxm_jo8wd01opf
+  groupby_b: []
+  adhoc_filters_b: []
+  order_desc_b: true
+  row_limit_b: 10000
+  truncate_metric_b: true
+  comparison_type_b: values
+  annotation_layers: []
+  x_axis_title: Brand Name
+  x_axis_title_margin: 30
+  y_axis_title_margin: 30
+  y_axis_title_position: Left
+  color_scheme: supersetColors
+  time_shift_color: true
+  seriesType: bar
+  only_total: true
+  opacity: 0.2
+  markerSize: 6
+  sort_series_type: sum
+  seriesTypeB: line
+  only_totalB: true
+  opacityB: 0.2
+  markerEnabledB: true
+  markerSizeB: 6
+  yAxisIndexB: 1
+  sort_series_typeB: sum
+  show_legend: true
+  legendType: scroll
+  legendOrientation: top
+  x_axis_time_format: smart_date
+  xAxisLabelInterval: auto
+  rich_tooltip: true
+  showTooltipTotal: true
+  tooltipTimeFormat: smart_date
+  truncateXAxis: true
+  y_axis_bounds:
+  - null
+  - null
+  y_axis_format: SMART_NUMBER
+  currency_format:
+    symbol: USD
+    symbolPosition: prefix
+  y_axis_bounds_secondary:
+  - null
+  - null
+  y_axis_format_secondary: SMART_NUMBER
+  currency_format_secondary:
+    symbol: USD
+    symbolPosition: prefix
+  extra_form_data: {}
+  dashboards:
+  - 12
+query_context: '{"datasource":{"id":27,"type":"table"},"force":false,"queries":[{"filters":[],"extras":{"having":"","where":""},"applied_time_extras":{},"columns":[{"columnType":"BASE_AXIS","sqlExpression":"brnd_name","label":"brnd_name","expressionType":"SQL","isColumnReference":true}],"metrics":[{"expressionType":"SIMPLE","column":{"advanced_data_type":null,"certification_details":null,"certified_by":null,"column_name":"total_cost","description":null,"expression":null,"filterable":true,"groupby":true,"id":816,"is_certified":false,"is_dttm":false,"python_date_format":null,"type":"DECIMAL","type_generic":0,"uuid":"ea2ae84f-b96b-481c-9d2d-d0703b8d0fbb","verbose_name":null,"warning_markdown":null},"aggregate":"SUM","sqlExpression":null,"datasourceWarning":false,"hasCustomLabel":true,"label":"Total
+  Cost","optionName":"metric_2910zkh7t4e_5xj658k1xgx"}],"annotation_layers":[],"row_limit":10000,"series_columns":[],"series_limit":0,"group_others_when_limit_reached":false,"url_params":{},"custom_params":{},"custom_form_data":{},"time_offsets":[],"post_processing":[{"operation":"pivot","options":{"index":["brnd_name"],"columns":[],"aggregates":{"Total
+  Cost":{"operator":"mean"}},"drop_missing_columns":true}},{"operation":"flatten"}],"orderby":[[{"aggregate":null,"column":null,"datasourceWarning":false,"expressionType":"SQL","hasCustomLabel":false,"label":"SUM(total_cost)","optionName":"metric_rpluyfeumrf_5ep6hggqv17","sqlExpression":"SUM(total_cost)"},false]]},{"filters":[],"extras":{"having":"","where":""},"applied_time_extras":{},"columns":[{"columnType":"BASE_AXIS","sqlExpression":"brnd_name","label":"brnd_name","expressionType":"SQL","isColumnReference":true}],"metrics":[{"expressionType":"SIMPLE","column":{"advanced_data_type":null,"certification_details":null,"certified_by":null,"column_name":"cost_per_claim","description":null,"expression":null,"filterable":true,"groupby":true,"id":818,"is_certified":false,"is_dttm":false,"python_date_format":null,"type":"DECIMAL","type_generic":0,"uuid":"ff294f1c-b4d6-4dec-8164-92f1905b5d43","verbose_name":null,"warning_markdown":null},"aggregate":"AVG","sqlExpression":null,"datasourceWarning":false,"hasCustomLabel":true,"label":"Cost
+  Per Claim","optionName":"metric_na30igabxm_jo8wd01opf"}],"annotation_layers":[],"row_limit":10000,"series_columns":[],"series_limit":0,"group_others_when_limit_reached":false,"url_params":{},"custom_params":{},"custom_form_data":{},"time_offsets":[],"post_processing":[{"operation":"pivot","options":{"index":["brnd_name"],"columns":[],"aggregates":{"Cost
+  Per Claim":{"operator":"mean"}},"drop_missing_columns":true}},{"operation":"flatten"}],"orderby":[[{"expressionType":"SIMPLE","column":{"advanced_data_type":null,"certification_details":null,"certified_by":null,"column_name":"cost_per_claim","description":null,"expression":null,"filterable":true,"groupby":true,"id":818,"is_certified":false,"is_dttm":false,"python_date_format":null,"type":"DECIMAL","type_generic":0,"uuid":"ff294f1c-b4d6-4dec-8164-92f1905b5d43","verbose_name":null,"warning_markdown":null},"aggregate":"AVG","sqlExpression":null,"datasourceWarning":false,"hasCustomLabel":true,"label":"Cost
+  Per Claim","optionName":"metric_na30igabxm_jo8wd01opf"},false]]}],"form_data":{"datasource":"27__table","viz_type":"mixed_timeseries","slice_id":206,"matrixify_show_column_headers":true,"matrixify_mode_columns":"metrics","matrixify_dimension_selection_mode_columns":"members","matrixify_dimension_columns":{"dimension":"","values":[]},"matrixify_topn_value_columns":10,"matrixify_topn_order_columns":"desc","matrixify_show_row_labels":true,"matrixify_mode_rows":"metrics","matrixify_dimension_selection_mode_rows":"members","matrixify_dimension_rows":{"dimension":"","values":[]},"matrixify_topn_value_rows":10,"matrixify_topn_order_rows":"desc","matrixify_row_height":300,"matrixify_fit_columns_dynamically":true,"matrixify_charts_per_row":4,"x_axis":"brnd_name","metrics":[{"expressionType":"SIMPLE","column":{"advanced_data_type":null,"certification_details":null,"certified_by":null,"column_name":"total_cost","description":null,"expression":null,"filterable":true,"groupby":true,"id":816,"is_certified":false,"is_dttm":false,"python_date_format":null,"type":"DECIMAL","type_generic":0,"uuid":"ea2ae84f-b96b-481c-9d2d-d0703b8d0fbb","verbose_name":null,"warning_markdown":null},"aggregate":"SUM","sqlExpression":null,"datasourceWarning":false,"hasCustomLabel":true,"label":"Total
+  Cost","optionName":"metric_2910zkh7t4e_5xj658k1xgx"}],"groupby":[],"adhoc_filters":[],"timeseries_limit_metric":{"aggregate":null,"column":null,"datasourceWarning":false,"expressionType":"SQL","hasCustomLabel":false,"label":"SUM(total_cost)","optionName":"metric_rpluyfeumrf_5ep6hggqv17","sqlExpression":"SUM(total_cost)"},"order_desc":true,"row_limit":10000,"truncate_metric":true,"comparison_type":"values","annotation_layers":[],"x_axis_title":"Brand
+  Name","x_axis_title_margin":30,"y_axis_title_margin":30,"y_axis_title_position":"Left","color_scheme":"supersetColors","time_shift_color":true,"seriesType":"bar","only_total":true,"opacity":0.2,"markerSize":6,"sort_series_type":"sum","seriesTypeB":"line","only_totalB":true,"opacityB":0.2,"markerEnabledB":true,"markerSizeB":6,"yAxisIndexB":1,"sort_series_typeB":"sum","show_legend":true,"legendType":"scroll","legendOrientation":"top","x_axis_time_format":"smart_date","xAxisLabelInterval":"auto","rich_tooltip":true,"showTooltipTotal":true,"tooltipTimeFormat":"smart_date","truncateXAxis":true,"y_axis_bounds":[null,null],"y_axis_format":"SMART_NUMBER","currency_format":{"symbol":"USD","symbolPosition":"prefix"},"y_axis_bounds_secondary":[null,null],"y_axis_format_secondary":"SMART_NUMBER","currency_format_secondary":{"symbol":"USD","symbolPosition":"prefix"},"extra_form_data":{},"dashboards":[12],"force":false,"result_format":"json","result_type":"full"},"result_format":"json","result_type":"full"}'
+cache_timeout: null
+uuid: 6b650371-e6a9-447d-b6d3-07627b3becdf
+version: 1.0.0
+dataset_uuid: 0528978c-e052-4a55-bf0d-b878d44232d2

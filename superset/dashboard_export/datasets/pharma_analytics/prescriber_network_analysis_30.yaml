@@ -1,0 +1,171 @@
+table_name: prescriber_network_analysis
+main_dttm_col: null
+description: null
+default_endpoint: null
+offset: 0
+cache_timeout: null
+catalog: pharma_analytics
+schema: public
+sql: "SELECT \r\n  Prscrbr_NPI,\r\n  Prscrbr_Last_Org_Name AS prescriber_name,\r\n\
+  \  Prscrbr_Type AS specialty,\r\n  Prscrbr_City AS city,\r\n  SUM(Tot_Clms) AS total_prescriptions,\r\
+  \n  SUM(Tot_Drug_Cst) AS total_cost,\r\n  SUM(Tot_Drug_Cst) * 1.0 / SUM(Tot_Clms)\
+  \ AS cost_per_claim,\r\n  COUNT(DISTINCT COALESCE(Gnrc_Name, Brnd_Name)) AS unique_drugs,\r\
+  \n  SUM(Tot_Benes) AS patients_served,\r\n\r\n  -- Z-score for cost-per-claim\r\n\
+  \  (\r\n    SUM(Tot_Drug_Cst) * 1.0 / SUM(Tot_Clms)\r\n    - AVG(SUM(Tot_Drug_Cst)\
+  \ * 1.0 / SUM(Tot_Clms)) OVER ()\r\n  ) /\r\n  NULLIF(STDDEV(SUM(Tot_Drug_Cst) *\
+  \ 1.0 / SUM(Tot_Clms)) OVER (), 0)\r\n  AS cost_z_score\r\n\r\nFROM medicare_prescriptions\r\
+  \nWHERE Prscrbr_State_Abrvtn = 'NJ'\r\nGROUP BY Prscrbr_NPI, Prscrbr_Last_Org_Name,\
+  \ Prscrbr_Type, Prscrbr_City\r\nHAVING SUM(Tot_Clms) > 100\r\nORDER BY total_cost\
+  \ DESC\r\nLIMIT 100;\r\n"
+params: null
+template_params: null
+filter_select_enabled: true
+fetch_values_predicate: null
+extra: null
+normalize_columns: false
+always_filter_main_dttm: false
+folders: null
+uuid: 4f217274-4373-4981-9636-337e1b370432
+metrics:
+- metric_name: count
+  verbose_name: COUNT(*)
+  metric_type: count
+  expression: COUNT(*)
+  description: null
+  d3format: null
+  currency: null
+  extra: null
+  warning_text: null
+columns:
+- column_name: cost_per_claim
+  verbose_name: null
+  is_dttm: false
+  is_active: true
+  type: DECIMAL
+  advanced_data_type: null
+  groupby: true
+  filterable: true
+  expression: ''
+  description: null
+  python_date_format: null
+  datetime_format: null
+  extra: null
+- column_name: cost_z_score
+  verbose_name: null
+  is_dttm: false
+  is_active: true
+  type: DECIMAL
+  advanced_data_type: null
+  groupby: true
+  filterable: true
+  expression: ''
+  description: null
+  python_date_format: null
+  datetime_format: null
+  extra: null
+- column_name: total_cost
+  verbose_name: null
+  is_dttm: false
+  is_active: true
+  type: DECIMAL
+  advanced_data_type: null
+  groupby: true
+  filterable: true
+  expression: ''
+  description: null
+  python_date_format: null
+  datetime_format: null
+  extra: null
+- column_name: patients_served
+  verbose_name: null
+  is_dttm: false
+  is_active: true
+  type: DECIMAL
+  advanced_data_type: null
+  groupby: true
+  filterable: true
+  expression: ''
+  description: null
+  python_date_format: null
+  datetime_format: null
+  extra: null
+- column_name: total_prescriptions
+  verbose_name: null
+  is_dttm: false
+  is_active: true
+  type: LONGINTEGER
+  advanced_data_type: null
+  groupby: true
+  filterable: true
+  expression: ''
+  description: null
+  python_date_format: null
+  datetime_format: null
+  extra: null
+- column_name: unique_drugs
+  verbose_name: null
+  is_dttm: false
+  is_active: true
+  type: LONGINTEGER
+  advanced_data_type: null
+  groupby: true
+  filterable: true
+  expression: ''
+  description: null
+  python_date_format: null
+  datetime_format: null
+  extra: null
+- column_name: prescriber_name
+  verbose_name: null
+  is_dttm: false
+  is_active: true
+  type: STRING
+  advanced_data_type: null
+  groupby: true
+  filterable: true
+  expression: ''
+  description: null
+  python_date_format: null
+  datetime_format: null
+  extra: null
+- column_name: prscrbr_npi
+  verbose_name: null
+  is_dttm: false
+  is_active: true
+  type: STRING
+  advanced_data_type: null
+  groupby: true
+  filterable: true
+  expression: ''
+  description: null
+  python_date_format: null
+  datetime_format: null
+  extra: null
+- column_name: specialty
+  verbose_name: null
+  is_dttm: false
+  is_active: true
+  type: STRING
+  advanced_data_type: null
+  groupby: true
+  filterable: true
+  expression: ''
+  description: null
+  python_date_format: null
+  datetime_format: null
+  extra: null
+- column_name: city
+  verbose_name: null
+  is_dttm: false
+  is_active: true
+  type: STRING
+  advanced_data_type: null
+  groupby: true
+  filterable: true
+  expression: ''
+  description: null
+  python_date_format: null
+  datetime_format: null
+  extra: null
+version: 1.0.0
+database_uuid: 36346b3d-1968-44ef-b990-bf515779505d

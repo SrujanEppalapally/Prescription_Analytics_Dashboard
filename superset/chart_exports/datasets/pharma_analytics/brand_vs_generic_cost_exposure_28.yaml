@@ -1,0 +1,89 @@
+table_name: brand_vs_generic_cost_exposure
+main_dttm_col: null
+description: null
+default_endpoint: null
+offset: 0
+cache_timeout: null
+catalog: pharma_analytics
+schema: public
+sql: "SELECT \r\n  CASE \r\n    WHEN LOWER(Brnd_Name) = LOWER(Gnrc_Name) THEN 'Generic'\r\
+  \n    ELSE 'Brand'\r\n  END as drug_type,\r\n  CASE \r\n    WHEN Tot_Drug_Cst /\
+  \ NULLIF(Tot_Clms, 0) > 600 THEN 'Specialty (>$600/claim)'\r\n    WHEN Tot_Drug_Cst\
+  \ / NULLIF(Tot_Clms, 0) > 100 THEN 'Mid-Tier ($100-$600)'\r\n    ELSE 'Low-Tier\
+  \ (<$100)'\r\n  END as cost_tier,\r\n  Prscrbr_Type as prescriber_specialty,\r\n\
+  \  SUM(Tot_Drug_Cst) as total_cost\r\nFROM medicare_prescriptions\r\nWHERE Prscrbr_State_Abrvtn\
+  \ = 'NJ'\r\nGROUP BY 1, 2, 3\r\n"
+params: null
+template_params: null
+filter_select_enabled: true
+fetch_values_predicate: null
+extra: null
+normalize_columns: false
+always_filter_main_dttm: false
+folders: null
+uuid: fcb536dd-c555-4916-8b1c-e62894ce87e3
+metrics:
+- metric_name: count
+  verbose_name: COUNT(*)
+  metric_type: count
+  expression: COUNT(*)
+  description: null
+  d3format: null
+  currency: null
+  extra: null
+  warning_text: null
+columns:
+- column_name: total_cost
+  verbose_name: null
+  is_dttm: false
+  is_active: true
+  type: DECIMAL
+  advanced_data_type: null
+  groupby: true
+  filterable: true
+  expression: null
+  description: null
+  python_date_format: null
+  datetime_format: null
+  extra: null
+- column_name: prescriber_specialty
+  verbose_name: null
+  is_dttm: false
+  is_active: true
+  type: STRING
+  advanced_data_type: null
+  groupby: true
+  filterable: true
+  expression: null
+  description: null
+  python_date_format: null
+  datetime_format: null
+  extra: null
+- column_name: cost_tier
+  verbose_name: null
+  is_dttm: false
+  is_active: true
+  type: STRING
+  advanced_data_type: null
+  groupby: true
+  filterable: true
+  expression: null
+  description: null
+  python_date_format: null
+  datetime_format: null
+  extra: null
+- column_name: drug_type
+  verbose_name: null
+  is_dttm: false
+  is_active: true
+  type: STRING
+  advanced_data_type: null
+  groupby: true
+  filterable: true
+  expression: null
+  description: null
+  python_date_format: null
+  datetime_format: null
+  extra: null
+version: 1.0.0
+database_uuid: 36346b3d-1968-44ef-b990-bf515779505d

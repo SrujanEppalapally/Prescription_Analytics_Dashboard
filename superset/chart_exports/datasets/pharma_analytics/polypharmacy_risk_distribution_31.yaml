@@ -1,0 +1,73 @@
+table_name: polypharmacy_risk_distribution
+main_dttm_col: null
+description: null
+default_endpoint: null
+offset: 0
+cache_timeout: null
+catalog: pharma_analytics
+schema: public
+sql: "SELECT \r\n  Prscrbr_NPI,\r\n  COUNT(DISTINCT Gnrc_Name) as drugs_per_prescriber,\r\
+  \n  SUM(Tot_Benes) / NULLIF(COUNT(DISTINCT Gnrc_Name), 0) as avg_patients_per_drug\r\
+  \nFROM medicare_prescriptions\r\nWHERE Prscrbr_State_Abrvtn = 'NJ'\r\nGROUP BY Prscrbr_NPI\r\
+  \n"
+params: null
+template_params: null
+filter_select_enabled: true
+fetch_values_predicate: null
+extra: null
+normalize_columns: false
+always_filter_main_dttm: false
+folders: null
+uuid: 5a82f828-58c3-4426-a41a-182295b0d8bb
+metrics:
+- metric_name: count
+  verbose_name: COUNT(*)
+  metric_type: count
+  expression: COUNT(*)
+  description: null
+  d3format: null
+  currency: null
+  extra: null
+  warning_text: null
+columns:
+- column_name: avg_patients_per_drug
+  verbose_name: null
+  is_dttm: false
+  is_active: true
+  type: DECIMAL
+  advanced_data_type: null
+  groupby: true
+  filterable: true
+  expression: null
+  description: null
+  python_date_format: null
+  datetime_format: null
+  extra: null
+- column_name: drugs_per_prescriber
+  verbose_name: null
+  is_dttm: false
+  is_active: true
+  type: LONGINTEGER
+  advanced_data_type: null
+  groupby: true
+  filterable: true
+  expression: null
+  description: null
+  python_date_format: null
+  datetime_format: null
+  extra: null
+- column_name: prscrbr_npi
+  verbose_name: null
+  is_dttm: false
+  is_active: true
+  type: STRING
+  advanced_data_type: null
+  groupby: true
+  filterable: true
+  expression: null
+  description: null
+  python_date_format: null
+  datetime_format: null
+  extra: null
+version: 1.0.0
+database_uuid: 36346b3d-1968-44ef-b990-bf515779505d

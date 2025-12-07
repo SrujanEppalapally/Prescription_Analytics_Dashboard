@@ -1,0 +1,196 @@
+slice_name: Senior Population Cost Impact
+description: null
+certified_by: null
+certification_details: null
+viz_type: mixed_timeseries
+params:
+  datasource: 38__table
+  viz_type: mixed_timeseries
+  slice_id: 213
+  matrixify_show_column_headers: true
+  matrixify_mode_columns: metrics
+  matrixify_dimension_selection_mode_columns: members
+  matrixify_dimension_columns:
+    dimension: ''
+    values: []
+  matrixify_topn_value_columns: 10
+  matrixify_topn_order_columns: desc
+  matrixify_show_row_labels: true
+  matrixify_mode_rows: metrics
+  matrixify_dimension_selection_mode_rows: members
+  matrixify_dimension_rows:
+    dimension: ''
+    values: []
+  matrixify_topn_value_rows: 10
+  matrixify_topn_order_rows: desc
+  matrixify_row_height: 300
+  matrixify_fit_columns_dynamically: true
+  matrixify_charts_per_row: 4
+  x_axis: specialty
+  metrics:
+  - expressionType: SIMPLE
+    column:
+      advanced_data_type: null
+      changed_on: '2025-12-06T17:39:36.031281'
+      column_name: senior_cost
+      created_on: '2025-12-06T17:39:31.849473'
+      description: null
+      expression: ''
+      extra: null
+      filterable: true
+      groupby: true
+      id: 901
+      is_active: true
+      is_dttm: false
+      python_date_format: null
+      type: DECIMAL
+      type_generic: 0
+      uuid: f9cb89b9-9ea2-4424-a51b-0a9f45ea27ca
+      verbose_name: null
+    aggregate: SUM
+    sqlExpression: null
+    datasourceWarning: false
+    hasCustomLabel: true
+    label: Senior Population Cost
+    optionName: metric_8tav3uvdw7g_ky983l7fdsl
+  - expressionType: SIMPLE
+    column:
+      advanced_data_type: null
+      changed_on: '2025-12-06T17:39:36.031287'
+      column_name: non_senior_cost
+      created_on: '2025-12-06T17:39:31.849488'
+      description: null
+      expression: ''
+      extra: null
+      filterable: true
+      groupby: true
+      id: 902
+      is_active: true
+      is_dttm: false
+      python_date_format: null
+      type: DECIMAL
+      type_generic: 0
+      uuid: 7318637d-ba8a-48f9-ac9d-455ef74162be
+      verbose_name: null
+    aggregate: SUM
+    sqlExpression: null
+    datasourceWarning: false
+    hasCustomLabel: true
+    label: Non-Senior Population Cost
+    optionName: metric_a5wfhd2p1ne_hzz7dusjcbv
+  groupby: []
+  adhoc_filters: []
+  order_desc: true
+  row_limit: 1000
+  truncate_metric: true
+  comparison_type: values
+  metrics_b:
+  - expressionType: SIMPLE
+    column:
+      advanced_data_type: null
+      changed_on: '2025-12-06T17:39:36.031291'
+      column_name: senior_cost_pct
+      created_on: '2025-12-06T17:39:31.849501'
+      description: null
+      expression: ''
+      extra: null
+      filterable: true
+      groupby: true
+      id: 903
+      is_active: true
+      is_dttm: false
+      python_date_format: null
+      type: DECIMAL
+      type_generic: 0
+      uuid: c536b4e2-19d5-4570-9a56-948cc23d6bd7
+      verbose_name: null
+    aggregate: SUM
+    sqlExpression: null
+    datasourceWarning: false
+    hasCustomLabel: true
+    label: Senior Population Cost Percentage
+    optionName: metric_62tpm7i7qqx_xoxxqqbk1
+  groupby_b: []
+  adhoc_filters_b: []
+  timeseries_limit_metric_b:
+    expressionType: SIMPLE
+    column:
+      advanced_data_type: null
+      changed_on: '2025-12-06T17:39:36.031291'
+      column_name: senior_cost_pct
+      created_on: '2025-12-06T17:39:31.849501'
+      description: null
+      expression: ''
+      extra: null
+      filterable: true
+      groupby: true
+      id: 903
+      is_active: true
+      is_dttm: false
+      python_date_format: null
+      type: DECIMAL
+      type_generic: 0
+      uuid: c536b4e2-19d5-4570-9a56-948cc23d6bd7
+      verbose_name: null
+    aggregate: SUM
+    sqlExpression: null
+    datasourceWarning: false
+    hasCustomLabel: false
+    label: SUM(senior_cost_pct)
+    optionName: metric_bskywh5au0j_k8dxwmcs5sc
+  order_desc_b: true
+  row_limit_b: 10000
+  truncate_metric_b: true
+  comparison_type_b: values
+  annotation_layers: []
+  x_axis_title: Speciality
+  x_axis_title_margin: 30
+  y_axis_title_margin: 30
+  y_axis_title_position: Left
+  color_scheme: supersetColors
+  seriesType: bar
+  stack: true
+  opacity: 0.2
+  markerSize: 6
+  sort_series_type: sum
+  seriesTypeB: line
+  opacityB: 0.2
+  markerEnabledB: true
+  markerSizeB: 6
+  yAxisIndexB: 1
+  sort_series_typeB: sum
+  show_legend: true
+  legendType: scroll
+  legendOrientation: top
+  x_axis_time_format: smart_date
+  xAxisLabelInterval: auto
+  rich_tooltip: true
+  tooltipTimeFormat: smart_date
+  truncateXAxis: true
+  y_axis_bounds:
+  - null
+  - null
+  y_axis_format: SMART_NUMBER
+  currency_format:
+    symbolPosition: prefix
+    symbol: USD
+  y_axis_bounds_secondary:
+  - null
+  - null
+  y_axis_format_secondary: SMART_NUMBER
+  extra_form_data: {}
+  dashboards:
+  - 12
+query_context: '{"datasource":{"id":38,"type":"table"},"force":false,"queries":[{"filters":[],"extras":{"having":"","where":""},"applied_time_extras":{},"columns":[{"columnType":"BASE_AXIS","sqlExpression":"specialty","label":"specialty","expressionType":"SQL","isColumnReference":true}],"metrics":[{"expressionType":"SIMPLE","column":{"advanced_data_type":null,"changed_on":"2025-12-06T17:39:36.031281","column_name":"senior_cost","created_on":"2025-12-06T17:39:31.849473","description":null,"expression":"","extra":null,"filterable":true,"groupby":true,"id":901,"is_active":true,"is_dttm":false,"python_date_format":null,"type":"DECIMAL","type_generic":0,"uuid":"f9cb89b9-9ea2-4424-a51b-0a9f45ea27ca","verbose_name":null},"aggregate":"SUM","sqlExpression":null,"datasourceWarning":false,"hasCustomLabel":true,"label":"Senior
+  Population Cost","optionName":"metric_8tav3uvdw7g_ky983l7fdsl"},{"expressionType":"SIMPLE","column":{"advanced_data_type":null,"changed_on":"2025-12-06T17:39:36.031287","column_name":"non_senior_cost","created_on":"2025-12-06T17:39:31.849488","description":null,"expression":"","extra":null,"filterable":true,"groupby":true,"id":902,"is_active":true,"is_dttm":false,"python_date_format":null,"type":"DECIMAL","type_generic":0,"uuid":"7318637d-ba8a-48f9-ac9d-455ef74162be","verbose_name":null},"aggregate":"SUM","sqlExpression":null,"datasourceWarning":false,"hasCustomLabel":true,"label":"Non-Senior
+  Population Cost","optionName":"metric_a5wfhd2p1ne_hzz7dusjcbv"}],"annotation_layers":[],"row_limit":1000,"series_columns":[],"series_limit":0,"group_others_when_limit_reached":false,"url_params":{},"custom_params":{},"custom_form_data":{},"time_offsets":[],"post_processing":[{"operation":"pivot","options":{"index":["specialty"],"columns":[],"aggregates":{"Senior
+  Population Cost":{"operator":"mean"},"Non-Senior Population Cost":{"operator":"mean"}},"drop_missing_columns":true}},{"operation":"flatten"}],"orderby":[[{"expressionType":"SIMPLE","column":{"advanced_data_type":null,"changed_on":"2025-12-06T17:39:36.031281","column_name":"senior_cost","created_on":"2025-12-06T17:39:31.849473","description":null,"expression":"","extra":null,"filterable":true,"groupby":true,"id":901,"is_active":true,"is_dttm":false,"python_date_format":null,"type":"DECIMAL","type_generic":0,"uuid":"f9cb89b9-9ea2-4424-a51b-0a9f45ea27ca","verbose_name":null},"aggregate":"SUM","sqlExpression":null,"datasourceWarning":false,"hasCustomLabel":true,"label":"Senior
+  Population Cost","optionName":"metric_8tav3uvdw7g_ky983l7fdsl"},false]]},{"filters":[],"extras":{"having":"","where":""},"applied_time_extras":{},"columns":[{"columnType":"BASE_AXIS","sqlExpression":"specialty","label":"specialty","expressionType":"SQL","isColumnReference":true}],"metrics":[{"expressionType":"SIMPLE","column":{"advanced_data_type":null,"changed_on":"2025-12-06T17:39:36.031291","column_name":"senior_cost_pct","created_on":"2025-12-06T17:39:31.849501","description":null,"expression":"","extra":null,"filterable":true,"groupby":true,"id":903,"is_active":true,"is_dttm":false,"python_date_format":null,"type":"DECIMAL","type_generic":0,"uuid":"c536b4e2-19d5-4570-9a56-948cc23d6bd7","verbose_name":null},"aggregate":"SUM","sqlExpression":null,"datasourceWarning":false,"hasCustomLabel":true,"label":"Senior
+  Population Cost Percentage","optionName":"metric_62tpm7i7qqx_xoxxqqbk1"}],"annotation_layers":[],"row_limit":10000,"series_columns":[],"series_limit":0,"group_others_when_limit_reached":false,"url_params":{},"custom_params":{},"custom_form_data":{},"time_offsets":[],"post_processing":[{"operation":"pivot","options":{"index":["specialty"],"columns":[],"aggregates":{"Senior
+  Population Cost Percentage":{"operator":"mean"}},"drop_missing_columns":true}},{"operation":"flatten"}],"orderby":[[{"expressionType":"SIMPLE","column":{"advanced_data_type":null,"changed_on":"2025-12-06T17:39:36.031291","column_name":"senior_cost_pct","created_on":"2025-12-06T17:39:31.849501","description":null,"expression":"","extra":null,"filterable":true,"groupby":true,"id":903,"is_active":true,"is_dttm":false,"python_date_format":null,"type":"DECIMAL","type_generic":0,"uuid":"c536b4e2-19d5-4570-9a56-948cc23d6bd7","verbose_name":null},"aggregate":"SUM","sqlExpression":null,"datasourceWarning":false,"hasCustomLabel":false,"label":"SUM(senior_cost_pct)","optionName":"metric_bskywh5au0j_k8dxwmcs5sc"},false]]}],"form_data":{"datasource":"38__table","viz_type":"mixed_timeseries","slice_id":213,"matrixify_show_column_headers":true,"matrixify_mode_columns":"metrics","matrixify_dimension_selection_mode_columns":"members","matrixify_dimension_columns":{"dimension":"","values":[]},"matrixify_topn_value_columns":10,"matrixify_topn_order_columns":"desc","matrixify_show_row_labels":true,"matrixify_mode_rows":"metrics","matrixify_dimension_selection_mode_rows":"members","matrixify_dimension_rows":{"dimension":"","values":[]},"matrixify_topn_value_rows":10,"matrixify_topn_order_rows":"desc","matrixify_row_height":300,"matrixify_fit_columns_dynamically":true,"matrixify_charts_per_row":4,"x_axis":"specialty","metrics":[{"expressionType":"SIMPLE","column":{"advanced_data_type":null,"changed_on":"2025-12-06T17:39:36.031281","column_name":"senior_cost","created_on":"2025-12-06T17:39:31.849473","description":null,"expression":"","extra":null,"filterable":true,"groupby":true,"id":901,"is_active":true,"is_dttm":false,"python_date_format":null,"type":"DECIMAL","type_generic":0,"uuid":"f9cb89b9-9ea2-4424-a51b-0a9f45ea27ca","verbose_name":null},"aggregate":"SUM","sqlExpression":null,"datasourceWarning":false,"hasCustomLabel":true,"label":"Senior
+  Population Cost","optionName":"metric_8tav3uvdw7g_ky983l7fdsl"},{"expressionType":"SIMPLE","column":{"advanced_data_type":null,"changed_on":"2025-12-06T17:39:36.031287","column_name":"non_senior_cost","created_on":"2025-12-06T17:39:31.849488","description":null,"expression":"","extra":null,"filterable":true,"groupby":true,"id":902,"is_active":true,"is_dttm":false,"python_date_format":null,"type":"DECIMAL","type_generic":0,"uuid":"7318637d-ba8a-48f9-ac9d-455ef74162be","verbose_name":null},"aggregate":"SUM","sqlExpression":null,"datasourceWarning":false,"hasCustomLabel":true,"label":"Non-Senior
+  Population Cost","optionName":"metric_a5wfhd2p1ne_hzz7dusjcbv"}],"groupby":[],"adhoc_filters":[],"order_desc":true,"row_limit":1000,"truncate_metric":true,"comparison_type":"values","annotation_layers":[],"x_axis_title":"Speciality","x_axis_title_margin":30,"y_axis_title_margin":30,"y_axis_title_position":"Left","color_scheme":"supersetColors","seriesType":"bar","stack":true,"opacity":0.2,"markerSize":6,"sort_series_type":"sum","seriesTypeB":"line","opacityB":0.2,"markerEnabledB":true,"markerSizeB":6,"yAxisIndexB":1,"sort_series_typeB":"sum","show_legend":true,"legendType":"scroll","legendOrientation":"top","x_axis_time_format":"smart_date","xAxisLabelInterval":"auto","rich_tooltip":true,"tooltipTimeFormat":"smart_date","truncateXAxis":true,"y_axis_bounds":[null,null],"y_axis_format":"SMART_NUMBER","currency_format":{"symbolPosition":"prefix","symbol":"USD"},"y_axis_bounds_secondary":[null,null],"y_axis_format_secondary":"SMART_NUMBER","extra_form_data":{},"dashboards":[12],"force":false,"result_format":"json","result_type":"full"},"result_format":"json","result_type":"full"}'
+cache_timeout: null
+uuid: 6ff91892-5344-489e-a0e6-4f57849bf4da
+version: 1.0.0
+dataset_uuid: 011abca9-8b66-46b4-b877-c58d7f934f58

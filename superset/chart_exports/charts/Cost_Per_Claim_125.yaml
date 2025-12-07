@@ -1,0 +1,59 @@
+slice_name: Cost Per Claim
+description: null
+certified_by: null
+certification_details: null
+viz_type: big_number_total
+params:
+  datasource: 26__table
+  viz_type: big_number_total
+  slice_id: 125
+  matrixify_show_column_headers: true
+  matrixify_mode_columns: metrics
+  matrixify_dimension_selection_mode_columns: members
+  matrixify_dimension_columns:
+    dimension: ''
+    values: []
+  matrixify_topn_value_columns: 10
+  matrixify_topn_order_columns: desc
+  matrixify_show_row_labels: true
+  matrixify_mode_rows: metrics
+  matrixify_dimension_selection_mode_rows: members
+  matrixify_dimension_rows:
+    dimension: ''
+    values: []
+  matrixify_topn_value_rows: 10
+  matrixify_topn_order_rows: desc
+  matrixify_row_height: 300
+  matrixify_fit_columns_dynamically: true
+  matrixify_charts_per_row: 4
+  metric:
+    expressionType: SQL
+    sqlExpression: "SUM(Tot_Drug_Cst) / NULLIF(SUM(Tot_Clms), 0)\r\n"
+    column: null
+    aggregate: null
+    datasourceWarning: false
+    hasCustomLabel: false
+    label: "SUM(Tot_Drug_Cst) / NULLIF(SUM(Tot_Clms), 0)\r\n"
+    optionName: metric_uu0h77pnjq_qwje57sfb8
+  adhoc_filters: []
+  header_font_size: 0.4
+  subtitle_font_size: 0.15
+  show_metric_name: false
+  y_axis_format: SMART_NUMBER
+  currency_format:
+    symbol: USD
+    symbolPosition: prefix
+  time_format: smart_date
+  conditional_formatting: []
+  extra_form_data: {}
+  dashboards:
+  - 12
+query_context: '{"datasource":{"id":26,"type":"table"},"force":false,"queries":[{"filters":[],"extras":{"having":"","where":""},"applied_time_extras":{},"columns":[],"metrics":[{"expressionType":"SQL","sqlExpression":"SUM(Tot_Drug_Cst)
+  / NULLIF(SUM(Tot_Clms), 0)\r\n","column":null,"aggregate":null,"datasourceWarning":false,"hasCustomLabel":false,"label":"SUM(Tot_Drug_Cst)
+  / NULLIF(SUM(Tot_Clms), 0)\r\n","optionName":"metric_uu0h77pnjq_qwje57sfb8"}],"annotation_layers":[],"series_limit":0,"group_others_when_limit_reached":false,"order_desc":true,"url_params":{},"custom_params":{},"custom_form_data":{}}],"form_data":{"datasource":"26__table","viz_type":"big_number_total","slice_id":125,"matrixify_show_column_headers":true,"matrixify_mode_columns":"metrics","matrixify_dimension_selection_mode_columns":"members","matrixify_dimension_columns":{"dimension":"","values":[]},"matrixify_topn_value_columns":10,"matrixify_topn_order_columns":"desc","matrixify_show_row_labels":true,"matrixify_mode_rows":"metrics","matrixify_dimension_selection_mode_rows":"members","matrixify_dimension_rows":{"dimension":"","values":[]},"matrixify_topn_value_rows":10,"matrixify_topn_order_rows":"desc","matrixify_row_height":300,"matrixify_fit_columns_dynamically":true,"matrixify_charts_per_row":4,"metric":{"expressionType":"SQL","sqlExpression":"SUM(Tot_Drug_Cst)
+  / NULLIF(SUM(Tot_Clms), 0)\r\n","column":null,"aggregate":null,"datasourceWarning":false,"hasCustomLabel":false,"label":"SUM(Tot_Drug_Cst)
+  / NULLIF(SUM(Tot_Clms), 0)\r\n","optionName":"metric_uu0h77pnjq_qwje57sfb8"},"adhoc_filters":[],"header_font_size":0.4,"subtitle_font_size":0.15,"show_metric_name":false,"y_axis_format":"SMART_NUMBER","currency_format":{"symbol":"USD","symbolPosition":"prefix"},"time_format":"smart_date","conditional_formatting":[],"extra_form_data":{},"dashboards":[12],"force":false,"result_format":"json","result_type":"full"},"result_format":"json","result_type":"full"}'
+cache_timeout: null
+uuid: 645b9cd5-2874-4664-893b-e9ccb0716acd
+version: 1.0.0
+dataset_uuid: ed59860c-5a89-4602-9583-25b603f7076d

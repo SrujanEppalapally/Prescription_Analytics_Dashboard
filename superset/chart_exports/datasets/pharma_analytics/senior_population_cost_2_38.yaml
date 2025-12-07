@@ -1,0 +1,128 @@
+table_name: senior_population_cost_2
+main_dttm_col: null
+description: null
+default_endpoint: null
+offset: 0
+cache_timeout: null
+catalog: pharma_analytics
+schema: public
+sql: "SELECT \r\n  Prscrbr_Type AS specialty,\r\n  SUM(GE65_Tot_Drug_Cst) AS senior_cost,\r\
+  \n  (SUM(Tot_Drug_Cst) - SUM(GE65_Tot_Drug_Cst)) AS non_senior_cost,\r\n  SUM(GE65_Tot_Drug_Cst)\
+  \ * 100.0 / NULLIF(SUM(Tot_Drug_Cst), 0) AS senior_cost_pct,\r\n  SUM(GE65_Tot_Benes)\
+  \ AS senior_patients,\r\n  (SUM(Tot_Benes) - SUM(GE65_Tot_Benes)) AS non_senior_patients,\r\
+  \n  SUM(Tot_Drug_Cst) AS total_cost\r\nFROM medicare_prescriptions\r\nWHERE Prscrbr_State_Abrvtn\
+  \ = 'NJ'\r\n  --AND GE65_Sprsn_Flag != '*'\r\nGROUP BY Prscrbr_Type\r\nHAVING SUM(Tot_Drug_Cst)\
+  \ > 100000\r\nORDER BY senior_cost_pct DESC;\r\n"
+params: null
+template_params: null
+filter_select_enabled: true
+fetch_values_predicate: null
+extra: null
+normalize_columns: false
+always_filter_main_dttm: false
+folders: null
+uuid: 011abca9-8b66-46b4-b877-c58d7f934f58
+metrics:
+- metric_name: count
+  verbose_name: COUNT(*)
+  metric_type: count
+  expression: COUNT(*)
+  description: null
+  d3format: null
+  currency: null
+  extra: null
+  warning_text: null
+columns:
+- column_name: non_senior_patients
+  verbose_name: null
+  is_dttm: false
+  is_active: true
+  type: DECIMAL
+  advanced_data_type: null
+  groupby: true
+  filterable: true
+  expression: ''
+  description: null
+  python_date_format: null
+  datetime_format: null
+  extra: null
+- column_name: senior_cost_pct
+  verbose_name: null
+  is_dttm: false
+  is_active: true
+  type: DECIMAL
+  advanced_data_type: null
+  groupby: true
+  filterable: true
+  expression: ''
+  description: null
+  python_date_format: null
+  datetime_format: null
+  extra: null
+- column_name: non_senior_cost
+  verbose_name: null
+  is_dttm: false
+  is_active: true
+  type: DECIMAL
+  advanced_data_type: null
+  groupby: true
+  filterable: true
+  expression: ''
+  description: null
+  python_date_format: null
+  datetime_format: null
+  extra: null
+- column_name: total_cost
+  verbose_name: null
+  is_dttm: false
+  is_active: true
+  type: DECIMAL
+  advanced_data_type: null
+  groupby: true
+  filterable: true
+  expression: ''
+  description: null
+  python_date_format: null
+  datetime_format: null
+  extra: null
+- column_name: senior_cost
+  verbose_name: null
+  is_dttm: false
+  is_active: true
+  type: DECIMAL
+  advanced_data_type: null
+  groupby: true
+  filterable: true
+  expression: ''
+  description: null
+  python_date_format: null
+  datetime_format: null
+  extra: null
+- column_name: senior_patients
+  verbose_name: null
+  is_dttm: false
+  is_active: true
+  type: LONGINTEGER
+  advanced_data_type: null
+  groupby: true
+  filterable: true
+  expression: ''
+  description: null
+  python_date_format: null
+  datetime_format: null
+  extra: null
+- column_name: specialty
+  verbose_name: null
+  is_dttm: false
+  is_active: true
+  type: STRING
+  advanced_data_type: null
+  groupby: true
+  filterable: true
+  expression: ''
+  description: null
+  python_date_format: null
+  datetime_format: null
+  extra: null
+version: 1.0.0
+database_uuid: 36346b3d-1968-44ef-b990-bf515779505d
