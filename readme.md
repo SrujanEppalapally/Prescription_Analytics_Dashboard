@@ -141,7 +141,7 @@ This analytics dashboard transforms 670K+ prescription records into actionable i
 <img src="superset/screenshots/senior-population-cost-impact-2025-12-06T21-29-49.172Z.jpg" alt="Project screenshot" width="800"/>
 <img src="superset/screenshots/prescriber-specialty-cost-ranking-2025-12-06T21-28-31.581Z.jpg" alt="Project screenshot" width="800"/>
 
-For more details on charts refer : [Charts Guide] (analytics/charts_guide.md)
+For more details on charts refer : [Charts Guide](analytics/charts_guide.md)
 
 ---
 
